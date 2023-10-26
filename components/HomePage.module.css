@@ -44,6 +44,7 @@
     outline: 2px solid black;
 }
 .mainText{
+    border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     font-family: 'Rubik', sans-serif;
@@ -117,6 +118,31 @@
     color: #cbcbcb;
 }
 
+#hoverer{
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.hover{
+    width: 100%; /* Make the image fill the container horizontally */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    transition: transform 0.3s;
+}
+
+.hover:hover {
+    transform: scale(1.05); /* Scale up the container on hover */
+}
+
+.hover:hover img {
+    transform: scale(1.05); /* Scale up the image on hover */
+}
+
+/* Reset the scale to normal on unhover */
+.hover:hover img:active {
+    transform: scale(1);
+}
+
 
 @media(max-width: 1110px) {
     .picText2{
@@ -169,5 +195,18 @@
         border-radius: 0;
         padding: 0;
         margin: 0;
+        padding-top: 10px;
+    }
+    .right{
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .picText{
+        padding-right: 10px;
+    } 
+    .picText2{
+        padding-right: 10px;
     }
 }

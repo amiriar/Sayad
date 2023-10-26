@@ -24,6 +24,15 @@ const Home = () => {
 
     const TesetemonialCount = clientDisplayWidth < 700 ? 1 : clientDisplayWidth > 1000 ? 3 : 3 
 
+    const imageStyles = {
+        border: '2px solid #333',
+        width:"100%",
+        height:'100%',
+        borderRadius:"1rem"
+        
+        /* Other inline styles for the Image component */
+    };
+
     return (
         <main className={styles.pageBody}>
             <div className={styles.pic}>
@@ -53,27 +62,26 @@ const Home = () => {
                     </p>
 
                     </div>
-                    <div className={styles.left}>
+                    <div className={styles.left} id='hoverer'>
                         <Image
                             src={'/sayad.jpg'}
                             alt='sayyad shirazi'
                             width={10000}
                             height={10000}
-                            style={{width:"100%", height:'100%',borderRadius:"1rem"}}
-                            className={styles.picture}
+                            style={imageStyles}
+                            className={styles.hover}
                         />
                     </div>
                 </div>
                 <div className={styles.grid}>
-                    
-                    <div className={styles.right}>
+                    <div className={styles.right} id='hoverer'>
                         <Image
                             src={'/Alex-James.jpg'}
                             alt='photo'
                             width={19200}
                             height={10800}
-                            style={{width:"100%", height:'100%',borderRadius:"1rem"}}
-                            className={styles.picture}
+                            style={imageStyles}
+                            className={styles.hover}
                         />
                     </div>
                     <div className={styles.left}>
@@ -85,7 +93,7 @@ const Home = () => {
                             که به همت مدیریت جدید و کارکنان توانمند به یکی از بهترین هنرستان های رشته های کامپیوتر و 
                             حسابداری تبدیل شده است.
                             <br/>
-                            این هنرستان طی سال های اخیر موفقیت های بزرگی مانند:
+                            این هنرستان طی سال های اخیر موفقیت های بزرگی از جمله:
                             <br/>
                             <br/>
                             <span className={styles.span}>
@@ -125,14 +133,14 @@ const Home = () => {
                             و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                         </p>
                     </div>
-                    <div className={styles.right}>
+                    <div className={styles.right} id='hoverer'>
                         <Image
                             src={'/Alex-James.jpg'}
                             alt='photo'
                             height={10000}
                             width={10000}
-                            style={{width:"100%", height:'100%',borderRadius:"1rem"}}
-                            className={styles.picture}
+                            style={imageStyles}
+                            className={styles.hover}
                         />
                     </div>
                 </div>

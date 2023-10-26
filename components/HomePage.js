@@ -7,9 +7,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import TesetemonialCard from './TesetemonialCard';
+import { useClientDisplayWidth } from './hooks/useClientDisplayWidth';
 
 const Home = () => {
+
+    const clientDisplayWidth = useClientDisplayWidth();
+    console.log(clientDisplayWidth);
     
     const workers = [
         {picSrc: "/Alex-James.jpg", name:" نام کارکنان 1", text:"مدیریت 1"},
@@ -20,7 +23,7 @@ const Home = () => {
         {picSrc: "/Alex-James.jpg", name:" نام کارکنان 6", text:"معاونت 6"},
     ]
 
-    const TesetemonialCount =  window.innerWidth < 700 && 1 || window.innerWidth > 1000 && 3 
+    const TesetemonialCount =  clientDisplayWidth < 700 && 1 || clientDisplayWidth > 1000 && 3 
 
     return (
         <main className={styles.pageBody}>

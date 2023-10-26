@@ -1,8 +1,8 @@
 .pic{
     min-height: 95vh;
     background-image: url('../public/Alex-James.jpg');
-    background-size: cover; /* To achieve the same effect as object-fit: cover; */
-    background-position: 50% 100%; /* To achieve the same effect as object-position: 50% 100%; */
+    background-size: cover;
+    background-position: 50% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,6 @@
 .swiperSlider {
     text-align: center;
     font-size: 18px;
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +36,6 @@
 .mySwiper {
     width: 100%;
     height: 250px;
-    /* background: #818383; */
     padding: 1rem 0rem 2rem 0rem;
     margin-bottom: 3rem;
 }
@@ -49,13 +47,8 @@
     display: flex;
     justify-content: center;
     font-family: 'Rubik', sans-serif;
-    padding: 1rem;    
+    padding: 1rem;
     flex-direction: column;
-    /* background: rgb(206,208,212);
-background: -moz-linear-gradient(0deg, rgba(206,208,212,1) 0%, rgba(255,255,255,1) 50%, rgba(206,208,212,1) 100%);
-background: -webkit-linear-gradient(0deg, rgba(206,208,212,1) 0%, rgba(255,255,255,1) 50%, rgba(206,208,212,1) 100%);
-background: linear-gradient(0deg, rgba(206,208,212,1) 0%, rgba(255,255,255,1) 50%, rgba(206,208,212,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ced0d4",endColorstr="#ced0d4",GradientType=1); */
     background-color: #1e1e1e;
     box-shadow: 5px 5px rgb(36, 35, 35);
     margin: 1rem;
@@ -63,17 +56,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ced0d4",endCo
     margin-top: 5rem;
 }
 
-/* .bigText{
-    padding: 1rem;
-    border-radius: 0.5rem;
-} */
+
 .workers{
-    /* padding: 1rem; */
-    /* background: rgb(206,208,212);
-    background: -moz-linear-gradient(0deg, rgba(206,208,212,1) 0%, rgba(255,255,255,1) 50%, rgba(206,208,212,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(206,208,212,1) 0%, rgba(255,255,255,1) 50%, rgba(206,208,212,1) 100%);
-    background: linear-gradient(0deg, rgba(206,208,212,1) 0%, rgba(255,255,255,1) 50%, rgba(206,208,212,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ced0d4",endColorstr="#ced0d4",GradientType=1); */
     font-family: 'Rubik', sans-serif;
     padding-top: 2rem;
     color: #f5f5f5;
@@ -93,7 +77,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ced0d4",endCo
     background-color: #232323;
 }
 .grid:hover{
-    transition: box-shadow 0.3s ease; /* Apply the transition to background-color */
+    transition: box-shadow 0.3s ease; 
     box-shadow: 5px 5px rgb(58, 57, 57);
 }
 
@@ -132,11 +116,37 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ced0d4",endCo
 .picText2:hover {
     color: #cbcbcb;
 }
+
+
 @media(max-width: 1110px) {
     .picText2{
         display: none !important;
     }
 }
+
+@media(max-width: 820px) {
+    .workers h2{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 640px) {
+    .workers h2{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .workers h2{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 400px) {
+    .workers h2{
+        font-size: 0.6rem;
+    }
+}
+
 
 @media(max-width: 370px) {
     .pic h1 {
@@ -144,5 +154,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ced0d4",endCo
     }
     .pic h5{
         font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 465px) {
+    .mainText{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media(max-width: 400px) {
+    .left{
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
     }
 }

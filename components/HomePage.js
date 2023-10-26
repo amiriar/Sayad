@@ -60,6 +60,7 @@ const Home = () => {
                             width={10000}
                             height={10000}
                             style={{width:"100%", height:'100%',borderRadius:"1rem"}}
+                            className={styles.picture}
                         />
                     </div>
                 </div>
@@ -71,7 +72,8 @@ const Home = () => {
                             alt='photo'
                             width={19200}
                             height={10800}
-                            style={{width:"100%", height:'100%',borderRadius:"1rem", aspectRatio:"16:9"}}
+                            style={{width:"100%", height:'100%',borderRadius:"1rem"}}
+                            className={styles.picture}
                         />
                     </div>
                     <div className={styles.left}>
@@ -130,6 +132,7 @@ const Home = () => {
                             height={10000}
                             width={10000}
                             style={{width:"100%", height:'100%',borderRadius:"1rem"}}
+                            className={styles.picture}
                         />
                     </div>
                 </div>

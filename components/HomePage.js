@@ -68,6 +68,7 @@ const Home = () => {
                             alt='sayyad shirazi'
                             width={10000}
                             height={10000}
+                            // layout='responsive'
                             style={imageStyles}
                             className={styles.hover}
                         />

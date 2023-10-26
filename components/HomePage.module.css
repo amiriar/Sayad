@@ -121,11 +121,13 @@
 #hoverer{
     overflow: hidden;
     transition: transform 0.3s;
+    width: 100% !important;
+    background-color: red;
 }
 
 .hover{
-    width: 100%; /* Make the image fill the container horizontally */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100% !important;
+    height: auto;
     display: block;
     transition: transform 0.3s;
 }
@@ -181,21 +183,6 @@
         font-size: 0.8rem;
     }
 }
-@media(max-width: 400px) {
-    .workers h2{
-        font-size: 0.6rem;
-    }
-}
-
-
-@media(max-width: 370px) {
-    .pic h1 {
-        font-size: 1.5rem;
-    }
-    .pic h5{
-        font-size: 0.7rem;
-    }
-}
 
 @media(max-width: 465px) {
     .mainText{
@@ -205,28 +192,76 @@
 }
 
 @media(max-width: 400px) {
+    .workers h2{
+        font-size: 0.6rem;
+    }
     .left{
         border-radius: 0;
         padding: 0;
         margin: 0;
-        padding-top: 10px;
+        padding-top: 20px;
+        width: 95% !important;
     }
     .right{
         border-radius: 0;
         padding: 0;
         margin: 0;
-        padding-top: 10px;
+        padding-top: 20px;
+        width: 95% !important;
     }
     .picText{
-        padding-right: 10px;
+        
+        padding-left: 10px;
     } 
     .picText2{
         padding-right: 10px;
     }
-    #hoverer{
-        width: 50%;
+}
+@media(max-width: 370px) {
+    .pic h1 {
+        font-size: 1.5rem;
     }
-    .hover{
-        width: 50%;
+    .pic h5{
+        font-size: 0.7rem;
+    }
+}
+@media(max-width: 380px) {
+    .left{
+        width: 90% !important;
+    }
+    .right{
+        width: 90% !important;
+    }
+}
+@media(max-width: 360px) {
+    .left{
+        width: 84% !important;
+    }
+    .right{
+        width: 84% !important;
+    }
+}
+@media(max-width: 348px) {
+    .left{
+        width: 81% !important;
+    }
+    .right{
+        width: 81% !important;
+    }
+}
+@media(max-width: 340px) {
+    .left{
+        width: 80% !important;
+    }
+    .right{
+        width: 80% !important;
+    }
+}
+@media(max-width: 320px) {
+    .left{
+        width: 78% !important;
+    }
+    .right{
+        width: 78% !important;
     }
 }

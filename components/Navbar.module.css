@@ -23,6 +23,7 @@
     align-items: center;
     gap: 40px;
 }
+
 .link{
     text-decoration: none;
     color: inherit;
@@ -46,6 +47,16 @@
         font-size: 1rem;
     }
 }
+@media(max-width: 425px) {
+    .navItems{
+        width: 45%;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    .name{
+        padding-right: 10px;
+    }   
+}
 @media(max-width: 400px) {
     .navItems{
         width: 50%;
@@ -55,9 +66,15 @@
         font-size: 0.8rem;
     }
 }
-@media(max-width: 320px) {
+@media(max-width: 340px) {
+    .name{
+        display: none;
+    }
     .navItems{
-        width: 50%;
-        gap: 15px;
+        width: 100%;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
     }
 }

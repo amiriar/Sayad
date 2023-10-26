@@ -6,13 +6,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Keyboard, Navigation } from 'swiper/modules';
 import { useClientDisplayWidth } from './hooks/useClientDisplayWidth';
 
 const Home = () => {
 
     const clientDisplayWidth = useClientDisplayWidth();
-    console.log(clientDisplayWidth);
     
     const workers = [
         {picSrc: "/Alex-James.jpg", name:" نام کارکنان 1", text:"مدیریت 1"},
@@ -23,7 +22,7 @@ const Home = () => {
         {picSrc: "/Alex-James.jpg", name:" نام کارکنان 6", text:"معاونت 6"},
     ]
 
-    const TesetemonialCount =  clientDisplayWidth < 700 && 1 || clientDisplayWidth > 1000 && 3 
+    const TesetemonialCount = clientDisplayWidth < 700 ? 1 : clientDisplayWidth > 1000 ? 3 : 3 
 
     return (
         <main className={styles.pageBody}>
@@ -35,8 +34,51 @@ const Home = () => {
             </div>
             <div className={styles.mainText}>
                 <div className={styles.grid}>
+                    <div className={styles.right}>
+                        <h2>زندگینامه شهید صیاد شیرازی</h2>
+
+                        <br/>
+                    <p className={styles.picText}>
+                        علی صیاد شیرازی (۱۳۲۳-۱۳۷۸ ه.ش)، از فرماندهان ارتش جمهوری اسلامی ایران که بعد از انقلاب اسلامی ایران و در جنگ تحمیلی عراق علیه ایران نقش موثری ایفا نموده و فرماندهی عملیات‌های پیروزمندانه ثامن الائمه، طریق القدس، فتح المبین و بیت المقدس در جنگ تحمیلی را بر عهده داشت.
+                        ایشان سمت‌های، فرماندهی نیروی زمینی ارتش جمهوری اسلامی؛ عضو شورای عالی دفاع ملی؛ معاونت بازرسی ستاد فرماندهی کل نیروهای مسلح و جانشین رئیس ستاد کل نیروهای مسلح را بر عهده داشت.
+                        صیاد شیرازی در ۲۱ فروردین سال ۱۳۷۸ شمسی به دست منافقین، مقابل منزل‌اش، ترور شده و به شهادت رسید.
+                    </p>
+                    <br/>
+                    <p className={styles.picText2}>
+                        حضرت آیت‌الله خامنه‌ای رهبر معظم انقلاب، در بخشی از پیامی که به مناسبت شهادت این شهید بزرگوار صادر نمودند چنین فرمودند:
+                        «امیر سرافراز ارتش اسلام و سرباز صادق و فداکار دین و قرآن،
+                        نظامی مؤمن و پارسا و پرهیزکار، سپهبد علی صیاد شیرازی امروز به دست منافقین مجرم و خونخوار و روسیاه به شهادت رسید او مانند دیگر مردان حق، از روزی که قدم در راه انقلاب نهادند،
+                        همواره سر و جان خود را برای نثار در راه خدا به روی دست داشتند.
+                        سرزمین‌های داغ خوزستان و گردنه‌های برافراشته کردستان سال‌ها شاهد آمادگی و فداکاری این انسان پاک نهاد و مصمم و شجاع بوده است...»
+                    </p>
+
+                    </div>
                     <div className={styles.left}>
-                        <p className={styles.bigText}>
+                        <Image
+                            src={'/sayad.jpg'}
+                            alt='sayyad shirazi'
+                            width={10000}
+                            height={10000}
+                            style={{width:"100%", height:'100%',borderRadius:"1rem"}}
+                        />
+                    </div>
+                </div>
+                <div className={styles.grid}>
+                    
+                    <div className={styles.right}>
+                        <Image
+                            src={'/Alex-James.jpg'}
+                            alt='photo'
+                            width={19200}
+                            height={10800}
+                            style={{width:"100%", height:'100%',borderRadius:"1rem", aspectRatio:"16:9"}}
+                        />
+                    </div>
+                    <div className={styles.left}>
+                            <h2>
+                                درباره این هنرستان
+                            </h2>
+                        <p className={styles.picText}>
                             هنرستان شهید صیاد شیرازی تاسیس شده در سال 1382، این هنرستان
                             که به همت مدیریت جدید و کارکنان توانمند به یکی از بهترین هنرستان های رشته های کامپیوتر و 
                             حسابداری تبدیل شده است.
@@ -44,29 +86,43 @@ const Home = () => {
                             این هنرستان طی سال های اخیر موفقیت های بزرگی مانند:
                             <br/>
                             <br/>
-                            <h3>
+                            <span className={styles.span}>
                                 موفقیت 1
-                            </h3>
+                            </span>
                             <br/>
-                            <h3>
+                            <br/>
+                            <span className={styles.span}>
                                 موفقیت 2
-                            </h3>
+                            </span>
+                            <br/>
+                            <br/>
+                            <span className={styles.span}>
+                                موفقیت 3
+                            </span>
+                            <br/>
                             <br/>
                             را داشته است که با همت دبیران خوب و در سطح کشوری این هنرستان را جزو بهترین هنرستان های منطقه تبدیل میکند.
                         </p>
                     </div>
-                    <div className={styles.right}>
-                        <Image
-                            src={'/Alex-James.jpg'}
-                            alt='photo'
-                            width={19200}
-                            height={10800}
-                            style={{width:"100%", height:'100%',borderRadius:"1rem"}}
-                        />
-                    </div>
                 </div>
                 <hr color='#3d3e3e'/>
                 <div className={styles.grid}>
+
+                    <div className={styles.left}>
+                        <h2>این یک متن تست است.</h2><br/>
+                        <p className={styles.picText}>
+                            ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده 
+                            از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و
+                            سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
+                        </p>
+                        <p className={styles.picText2}>
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد،
+                            در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها،
+                            و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی،
+                            و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
                     <div className={styles.right}>
                         <Image
                             src={'/Alex-James.jpg'}
@@ -75,19 +131,6 @@ const Home = () => {
                             width={10000}
                             style={{width:"100%", height:'100%',borderRadius:"1rem"}}
                         />
-                    </div>
-                    <div className={styles.left}>
-                        <h2>این یک متن تست است.</h2><br/>
-                        <p className={styles.picText}>
-                            ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-                        </p>
-                        {/* <br/>
-                        <br/>
-                        <br/>
-                        <h2>این یک متن تست است.</h2><br/>
-                        <p className={styles.picText}>
-                            ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-                        </p> */}
                     </div>
                 </div>
             </div>
@@ -98,15 +141,14 @@ const Home = () => {
                     slidesPerView={TesetemonialCount}
                     navigation={true}
                     spaceBetween={30}
-                    // pagination={{
-                    // clickable: true,
-                    // dynamicBullets:true
-                    // }}
+                    keyboard={{
+                        enabled: true,
+                    }}
                     autoplay={{
-                        delay: 3000,
+                        delay: 2000,
                         disableOnInteraction: false,
                     }}
-                    modules={[Autoplay,Navigation, Pagination]}
+                    modules={[Autoplay,Navigation, Pagination,Keyboard]}
                     className={styles.mySwiper}
                     loop={true}
                     style={{marginTop: "2rem"}}

@@ -8,7 +8,7 @@ const Navbar = () => {
             <header className={styles.header}>
                 <nav className={styles.navbar}>
                     <div className={styles.logoName}>
-                        <h1>
+                        <h1 className={styles.name}>
                             هنرستان شهید صیاد شیرازی 
                         </h1>
                     </div>

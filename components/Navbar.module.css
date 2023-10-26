@@ -2,8 +2,6 @@
 .header{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
     height: 4rem;
     background-color: #1c1c1c;
     color: #ffe6e6;
@@ -28,4 +26,38 @@
 .link{
     text-decoration: none;
     color: inherit;
+}
+@media(max-width: 710px) {
+    .header{
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 600px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .navItems{
+        width: 40%;
+        gap: 20px;
+    }
+    .name{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 400px) {
+    .navItems{
+        width: 50%;
+        gap: 20px;
+    }
+    .name{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 320px) {
+    .navItems{
+        width: 50%;
+        gap: 15px;
+    }
 }

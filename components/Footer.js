@@ -4,6 +4,7 @@ import { LiaTelegram } from 'react-icons/lia'
 import { BiLogoGmail } from 'react-icons/bi'
 import { AiFillLinkedin } from 'react-icons/ai'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -15,17 +16,26 @@ const Footer = () => {
                 </p>
             </div>
             <div className={styles.icon}>
-                <Link href={''} className={styles.link}>
+                {/* <Link target='_blank' href={'https://t.me/amiriar'} className={styles.link}>
                     <sapn>
-                        <LiaTelegram size={25} />
+                        //<LiaTelegram size={25} />
+                        <Image
+                            src={'/icons8-telegram.svg'}
+                            alt='telegram'
+                            height={25}
+                            width={25}
+                            style={{color:"#fff"}}
+                            draggable={false}
+                            id='telegram'
+                        />
                     </sapn>
-                </Link>
-                <Link href={'mailto:abdolrahimiamirreza@gmail.com'} className={styles.link}>
+                </Link> */}
+                <Link target='_blank' href={'mailto:abdolrahimiamirreza@gmail.com'} className={styles.link}>
                     <span>
                         <BiLogoGmail size={25} />
                     </span>
                 </Link>
-                <Link href={'https://www.linkedin.com/in/amirreza-abdolrahimi-a502a726b/'} className={styles.link}>
+                <Link target='_blank' href={'https://www.linkedin.com/in/amirreza-abdolrahimi-a502a726b/'} className={styles.link}>
                     <span>
                         <AiFillLinkedin size={25} />
                     </span>

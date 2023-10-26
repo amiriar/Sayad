@@ -114,8 +114,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ced0d4",endCo
 .picText {
     color: #818383;
     padding: 10px 20px;
-    transition: color 0.3s; /* Apply the transition to background-color */
-    cursor: pointer;
+    transition: color 0.3s;
+    cursor:default;
 }
 
 .picText:hover {
@@ -125,8 +125,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ced0d4",endCo
 .picText2 {
     color: #818383;
     padding: 10px 20px;
-    transition: color 0.3s; /* Apply the transition to background-color */
-    cursor: pointer;
+    transition: color 0.3s;
+    cursor:default;
 }
 
 .picText2:hover {

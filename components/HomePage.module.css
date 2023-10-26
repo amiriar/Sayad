@@ -150,7 +150,21 @@
     }
 }
 
+@media(max-width: 950px) {
+    .picText{
+        font-size: 0.9rem;
+    }
+}
+@media(max-width: 870px) {
+    .picText{
+        font-size: 0.8rem;
+    }
+}
+
 @media(max-width: 820px) {
+    .picText{
+        font-size: 1rem;
+    }
     .workers h2{
         font-size: 1.2rem;
     }
@@ -208,5 +222,11 @@
     } 
     .picText2{
         padding-right: 10px;
+    }
+    #hoverer{
+        width: 50%;
+    }
+    .hover{
+        width: 50%;
     }
 }

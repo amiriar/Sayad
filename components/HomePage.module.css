@@ -216,6 +216,20 @@
     .picText2{
         padding-right: 10px;
     }
+    .hover:hover {
+        transform: scale(1.0); /* Scale up the container on hover */
+    }
+    
+    .hover:hover img {
+        transform: scale(1.0); /* Scale up the image on hover */
+    }
+    
+    /* Reset the scale to normal on unhover */
+    .hover:hover img:active {
+        transform: scale(1);
+    }
+    
+    
 }
 @media(max-width: 370px) {
     .pic h1 {

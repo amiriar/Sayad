@@ -122,7 +122,6 @@
     overflow: hidden;
     transition: transform 0.3s;
     width: 100% !important;
-    background-color: red;
 }
 
 .hover{

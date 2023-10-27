@@ -79,6 +79,16 @@ const page = () => {
                     </div>
                 </div>
             </section>
+            <div className={styles.quoteDiv}>
+                <p className={styles.quote}>
+                به نظر من تاریخ تولد و مرگ یک انسان ، همه زندگی او را تشکیل نمی دهد ، 
+                <br/>
+                آنچه که زندگی یک مرد را از نقطه آغاز ، از روز تولد تا لحظه مرگ می سازد
+                <br/>
+                "شخصیت ، روحیه جوانمردی ، صفا ، انسانیت و اخلاقیات اوست."
+                </p><br/>
+                <span className={styles.author}>&nbsp;&nbsp;&nbsp;&nbsp; چارلی چاپلین</span>
+            </div>
         </div>
     )
 }

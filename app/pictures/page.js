@@ -38,7 +38,7 @@ const page = () => {
                 columnClassName="my-masonry-grid_column"
             >
                 {images.map((item ,index) => (
-                    <img src={item} key={index} alt={index} width={'100%'} height={'auto'} />
+                    <Image src={item} key={index} alt={index} width={10000} height={10000} className='pictureItem' />
                 ))}
             </Masonry>
         </div>

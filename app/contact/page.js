@@ -88,7 +88,7 @@ const page = () => {
                 <br/>
                 "شخصیت ، روحیه جوانمردی ، صفا ، انسانیت و اخلاقیات اوست."
                 </p><br/>
-                <span className={styles.author}>&nbsp;&nbsp;&nbsp;&nbsp; چارلی چاپلین</span>
+                <span className={styles.author}>&nbsp;&nbsp;&nbsp;&nbsp; غلامرضا تختی </span>
             </div>
         </div>
     )

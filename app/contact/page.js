@@ -7,10 +7,6 @@ import { BsBookmarkStarFill } from 'react-icons/bs'
 import "leaflet/dist/leaflet.css";
 import Link from 'next/link'
 
-export const metadata = {
-    title: 'ارتباط باما | هنرستان صیاد شیرازی',
-    description: 'صفحه ی ارتباط باما در هنرستان شهید صیاد شیرازی منطقه 14',   
-}
 
 const page = () => {
 

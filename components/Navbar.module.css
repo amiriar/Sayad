@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
 .header{
     display: flex;
     align-items: center;
     height: 4rem;
     background-color: #1c1c1c;
     color: #ffe6e6;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Yekan', sans-serif;
+
     border-bottom: black 1px solid;
 }
 .navbar{

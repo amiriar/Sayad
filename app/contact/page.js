@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './styles/contact.module.css'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { PiAddressBookFill } from 'react-icons/pi'
@@ -13,7 +13,36 @@ import {
   } from "react-leaflet";
   import "leaflet/dist/leaflet.css";
 import Link from 'next/link'
+
 const page = () => {
+
+    useEffect(() => {
+        // Check if the map container exists before initializing the map
+        if (!document.querySelector("#map")) {
+          return;
+        }
+    
+        // Import Leaflet-related code here on the client side
+        import("leaflet").then((L) => {
+          if (!document.querySelector("#map")) {
+            return; // Check again if the map container exists after the import
+          }
+    
+          const map = L.map("map").setView([35.659078, 51.474325], 13);
+    
+          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+    
+          L.circleMarker([35.659078, 51.474325], {
+            color: "#000000",
+            fillColor: "#FDD876",
+            fillOpacity: 1,
+            weight: 1,
+          }).addTo(map);
+        });
+      }, []);
+
     return (
         <div className={styles.container}>
             <section className={styles.aboutSection}>
@@ -53,8 +82,7 @@ const page = () => {
                         
                     </div>
                     <div className={styles.left}>
-                        <MapContainer
-                            // style={{ width: "100%", height: "100vh" }}
+                        {/* <MapContainer
                             className={styles.homeMap}
                             zoom={13}
                             center={[35.659078,51.474325]}
@@ -74,7 +102,8 @@ const page = () => {
                                 fillOpacity={true}
                                 weight={1}
                             />
-                        </MapContainer>
+                        </MapContainer> */}
+                        <div id="map" className={styles.homeMap} ></div>
                     </div>
                 </div>
             </section>

@@ -4,6 +4,11 @@ import styles from './styles/pictures.module.css'
 import Image from 'next/image'
 import Masonry from 'react-masonry-css'
 
+export const metadata = {
+    title: ' عکس ها | هنرستان صیاد شیرازی',
+    description: 'صفحه ی عکس ها در هنرستان شهید صیاد شیرازی منطقه 14',   
+}
+
 const page = () => {
 
     const breakpoints = {

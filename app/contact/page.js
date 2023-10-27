@@ -4,14 +4,7 @@ import styles from './styles/contact.module.css'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { PiAddressBookFill } from 'react-icons/pi'
 import { BsBookmarkStarFill } from 'react-icons/bs'
-import {
-    MapContainer,
-    Marker,
-    TileLayer,
-    Popup,
-    CircleMarker
-  } from "react-leaflet";
-  import "leaflet/dist/leaflet.css";
+import "leaflet/dist/leaflet.css";
 import Link from 'next/link'
 
 const page = () => {
@@ -19,29 +12,29 @@ const page = () => {
     useEffect(() => {
         // Check if the map container exists before initializing the map
         if (!document.querySelector("#map")) {
-          return;
+            return;
         }
     
         // Import Leaflet-related code here on the client side
         import("leaflet").then((L) => {
-          if (!document.querySelector("#map")) {
-            return; // Check again if the map container exists after the import
-          }
+        if (!document.querySelector("#map")) {
+          return; // Check again if the map container exists after the import
+        }
     
-          const map = L.map("map").setView([35.659078, 51.474325], 13);
+        const map = L.map("map").setView([35.659078, 51.474325], 13);
     
-          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          }).addTo(map);
+        }).addTo(map);
     
-          L.circleMarker([35.659078, 51.474325], {
+        L.circleMarker([35.659078, 51.474325], {
             color: "#000000",
             fillColor: "#FDD876",
             fillOpacity: 1,
             weight: 1,
-          }).addTo(map);
+        }).addTo(map);
         });
-      }, []);
+    }, []);
 
     return (
         <div className={styles.container}>
@@ -82,27 +75,6 @@ const page = () => {
                         
                     </div>
                     <div className={styles.left}>
-                        {/* <MapContainer
-                            className={styles.homeMap}
-                            zoom={13}
-                            center={[35.659078,51.474325]}
-                            scrollWheelZoom={true}
-                            fadeAnimation={true}
-                            markerZoomAnimation={true}
-                        >
-                            <TileLayer
-                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                            />
-                            <CircleMarker
-                                center={[35.659078,51.474325]}
-                                color={"#000000"}
-                                fillColor={"#FDD876"}
-                                stroke={true}
-                                fillOpacity={true}
-                                weight={1}
-                            />
-                        </MapContainer> */}
                         <div id="map" className={styles.homeMap} ></div>
                     </div>
                 </div>

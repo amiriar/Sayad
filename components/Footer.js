@@ -9,27 +9,21 @@ import Image from 'next/image'
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <div>
+            <div className={styles.name}>
+                <Image
+                    src={'/Picsart_23-10-26_21-06-31-162.jpg'}
+                    alt='me :D'
+                    width={35}
+                    height={35}
+                    style={{borderRadius:"50%"}}
+                    className={styles.smallHid}
+                />
                 <p className={styles.text}>
                     &copy;
                     1402 تمامی حقوق محفوظ است، امیررضا عبدالرحیمی
                 </p>
             </div>
             <div className={styles.icon}>
-                {/* <Link target='_blank' href={'https://t.me/amiriar'} className={styles.link}>
-                    <sapn>
-                        //<LiaTelegram size={25} />
-                        <Image
-                            src={'/icons8-telegram.svg'}
-                            alt='telegram'
-                            height={25}
-                            width={25}
-                            style={{color:"#fff"}}
-                            draggable={false}
-                            id='telegram'
-                        />
-                    </sapn>
-                </Link> */}
                 <Link target='_blank' href={'mailto:abdolrahimiamirreza@gmail.com'} className={styles.link}>
                     <span>
                         <BiLogoGmail size={25} />

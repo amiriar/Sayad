@@ -25,6 +25,10 @@
     text-decoration: none;
     color: inherit;
 }
+.name{
+    display: flex;
+    align-items: center;
+}
 @media(max-width: 550px) {
     .text{
         font-size: 0.8rem;
@@ -32,5 +36,7 @@
     
 }
 @media(max-width: 500px) {
-    
+    .smallHid{
+        display: none;
+    }
 }

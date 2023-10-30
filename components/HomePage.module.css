@@ -32,7 +32,7 @@
     background-color: #1c1c1c;
     box-shadow: 5px 5px rgb(61, 60, 60);
     border-radius: 0.5rem;
-    cursor: e-resize;
+    cursor: pointer;
 }
 
 .mySwiper {
@@ -149,6 +149,14 @@
     transform: scale(1);
 }
 
+.tName{
+    text-decoration: none;
+}
+
+.cvClick{
+    text-decoration: none;
+    color: inherit;
+}
 
 @media(max-width: 1110px) {
     .picText2{
@@ -185,6 +193,10 @@
 @media(max-width: 500px) {
     .workers h2{
         font-size: 0.8rem;
+    }
+
+    .swiperSlider {
+        cursor: default;
     }
 }
 

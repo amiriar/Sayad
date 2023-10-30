@@ -8,20 +8,39 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Keyboard, Navigation } from 'swiper/modules';
 import { useClientDisplayWidth } from './hooks/useClientDisplayWidth';
+import Link from 'next/link';
 
 const Home = () => {
 
     const clientDisplayWidth = useClientDisplayWidth();
     
     const workers = [
-        {picSrc: "/Alex-James.jpg", name:" نام کارکنان 1", text:"مدیریت 1"},
-        {picSrc: "/Alex-James.jpg", name:" نام کارکنان 2", text:"معاونت 2"},
-        {picSrc: "/Alex-James.jpg", name:" نام کارکنان 3", text:"معاونت 3"},
-        {picSrc: "/Alex-James.jpg", name:" نام کارکنان 4", text:"معاونت 4"},
-        {picSrc: "/Alex-James.jpg", name:" نام کارکنان 5", text:"معاونت 5"},
-        {picSrc: "/Alex-James.jpg", name:" نام کارکنان 6", text:"معاونت 6"},
+        {cv: true , picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"mirbagheri" ,persionName:"سید سعید میرباقری"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"kassaeian" ,persionName:"حمید کساییان"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"saeedi-nia" ,persionName:"رضا سعیدی نیا"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"rahimian" ,persionName:"احسان رحیمیان"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"esmaeeli" ,persionName:"محمد اسماعیلی"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"hesabdari" ,englishName:"joodaki" ,persionName:"قاسم جودکی"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"hesabdari" ,englishName:"farahi" ,persionName:"مجتبی فرحی"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"hesabdari" ,englishName:"ranjbari" ,persionName:"علی رنجبری"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"kayyal" ,persionName:"حسین کیال"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"hesabdari" ,englishName:"moalemian" ,persionName:"مرتضی معلمیان"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"javedan" ,persionName:"نصرالله جاودان"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"khodakarimi" ,persionName:"محمدرضا خداکریمی"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"aftab-lagha" ,persionName:"محمدرضا آفتاب‌لقا"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"darabi" ,persionName:"محمدرضا دارابی"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"zahiri" ,persionName:"مصطفی ظهیری"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"shahsavari" ,persionName:"محسن شهسواری"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"taghavai" ,persionName:"سید محمد تقوی"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"rostamian" ,persionName:"غلامعلی رستمیان"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"kia-shemshaki" ,persionName:"امیر کیا‌شمشکی"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"rezaiat" ,persionName:"علیرضا رضایت"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"baboee" ,persionName:"محمد بابویی"},
+        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"taj-abadi" ,persionName:"آقای تاج‌آبادی"},
+        // {cv: false ,picSrc: "/Alex-James.jpg", englishName:"" ,persionName:"میرحسین"},
+        // {cv: false ,picSrc: "/Alex-James.jpg", englishName:"" ,persionName:"کامران عربی"},
     ]
-
+    
     const TesetemonialCount = clientDisplayWidth < 700 ? 1 : clientDisplayWidth > 1000 ? 3 : 3 
 
     const imageStyles = {
@@ -129,14 +148,9 @@ const Home = () => {
                 </div>
                 <hr color='#3d3e3e'/>
                 <div className={styles.grid}>
-
                     <div className={styles.left}>
-                        <h2>این یک متن تست است.</h2><br/>
+                        <h2>درباره مدیریت این مجموعه..</h2><br/>
                         <p className={styles.picText}>
-                            ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده 
-                            از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
-                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و
-                            سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری
                         </p>
                         <p className={styles.picText2}>
                             را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد،
@@ -178,7 +192,7 @@ const Home = () => {
                 >
                     {
                         workers.map((item) => (
-                            <SwiperSlide className={styles.swiperSlider} key={item.name}>
+                            <SwiperSlide className={styles.swiperSlider} key={item.englishName}>
                                 <div>
                                     <Image
                                         src={item.picSrc}
@@ -187,8 +201,20 @@ const Home = () => {
                                         height={50}
                                         className={styles.image}
                                     />
-                                    <h3>{item.name}</h3>
-                                    <p>{item.text}</p>
+                                    <h3 className={styles.tName}>{item.persionName}</h3>
+                                    {
+                                        item.cv ?
+                                        <Link href={`/teacher/${item.englishName}`} className={styles.cvClick}>
+                                            برای دیدن رزومه ایشان اینجا کلیک کنید.
+                                        </Link> : 
+                                        item.reshte === "computer" ?
+                                        "دبیر تخصصی کامپیوتر" : 
+                                        item.reshte === "hesabdari" ? 
+                                        "دبیر تخصصی حسابداری" :
+                                        item.reshte === "oomomi" ?
+                                        "دبیر دروس عمومی" :
+                                        "دبیر"
+                                    }
                                 </div>
                             </SwiperSlide>
                         ))

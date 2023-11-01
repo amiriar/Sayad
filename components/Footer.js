@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.name}>
                 <Image
-                    src={'/Picsart_23-10-26_21-06-31-162.jpg'}
+                    src={'/images/Picsart_23-10-26_21-06-31-162.jpg'}
                     alt='me :D'
                     width={35}
                     height={35}

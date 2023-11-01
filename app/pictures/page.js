@@ -13,21 +13,26 @@ const page = () => {
     }
 
     const images = [
-        "/F-15.jpg",
-        "/Eiffel.jpg",
-        "/F-15.jpg",
-        "/Eiffel.jpg",
-        "/F-15.jpg",
-        "/Eiffel.jpg",
-        "/F-15.jpg",
-        "/Eiffel.jpg",
-        "/F-15.jpg",
-        "/Eiffel.jpg",
-        "/F-15.jpg",
-        "/Eiffel.jpg",
-        "/F-15.jpg",
-        "/Eiffel.jpg",
-        "/F-15.jpg",
+        "/images/1.jpg",
+        "/images/2.heic",
+        "/images/3.heic",
+        "/images/4.jpg",
+        "/images/5.jpg",
+        "/images/6.jpg",
+        "/images/7.jpg",
+        "/images/8.jpg",
+        //
+        "/images/4.jpg",
+        "/images/5.jpg",
+        "/images/6.jpg",
+        "/images/7.jpg",
+        "/images/8.jpg",
+        "/images/4.jpg",
+        "/images/5.jpg",
+        "/images/6.jpg",
+        "/images/7.jpg",
+        "/images/8.jpg",
+        //
     ]
 
     return (
@@ -38,7 +43,7 @@ const page = () => {
                 columnClassName="my-masonry-grid_column"
             >
                 {images.map((item ,index) => (
-                    <Image src={item} key={index} alt={index} width={10000} height={10000} className='pictureItem' />
+                    <Image src={item} key={index} alt={index} width={10000} height={10000} className='pictureItem' draggable={false} />
                 ))}
             </Masonry>
         </div>

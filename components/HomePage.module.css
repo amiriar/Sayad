@@ -1,6 +1,6 @@
 .pic{
     min-height: 95vh;
-    background-image: url('../public/Alex-James.jpg');
+    background-image: url('../public/images/Alex-James.jpg');
     background-size: cover;
     background-position: 50% 100%;
     display: flex;
@@ -43,7 +43,7 @@
 }
 .image{
     border-radius: 50%;
-    outline: 2px solid black;
+    outline: 2px solid rgb(201, 195, 195);
 }
 .mainText{
     border-radius: 0.5rem;
@@ -158,7 +158,7 @@
     color: inherit;
 }
 
-@media(max-width: 1110px) {
+@media(max-width: 1410px) {
     .picText2{
         display: none !important;
     }

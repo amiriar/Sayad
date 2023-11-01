@@ -15,30 +15,30 @@ const Home = () => {
     const clientDisplayWidth = useClientDisplayWidth();
     
     const workers = [
-        {cv: true , picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"mirbagheri" ,persionName:"سید سعید میرباقری"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"kassaeian" ,persionName:"حمید کساییان"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"saeedi-nia" ,persionName:"رضا سعیدی نیا"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"rahimian" ,persionName:"احسان رحیمیان"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"esmaeeli" ,persionName:"محمد اسماعیلی"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"hesabdari" ,englishName:"joodaki" ,persionName:"قاسم جودکی"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"hesabdari" ,englishName:"farahi" ,persionName:"مجتبی فرحی"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"hesabdari" ,englishName:"ranjbari" ,persionName:"علی رنجبری"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"kayyal" ,persionName:"حسین کیال"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"hesabdari" ,englishName:"moalemian" ,persionName:"مرتضی معلمیان"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"javedan" ,persionName:"نصرالله جاودان"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"khodakarimi" ,persionName:"محمدرضا خداکریمی"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"aftab-lagha" ,persionName:"محمدرضا آفتاب‌لقا"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"darabi" ,persionName:"محمدرضا دارابی"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"zahiri" ,persionName:"مصطفی ظهیری"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"shahsavari" ,persionName:"محسن شهسواری"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"taghavai" ,persionName:"سید محمد تقوی"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"rostamian" ,persionName:"غلامعلی رستمیان"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"kia-shemshaki" ,persionName:"امیر کیا‌شمشکی"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"oomomi" ,englishName:"rezaiat" ,persionName:"علیرضا رضایت"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"" ,englishName:"baboee" ,persionName:"محمد بابویی"},
-        {cv: false ,picSrc: "/Alex-James.jpg", reshte:"computer" ,englishName:"taj-abadi" ,persionName:"آقای تاج‌آبادی"},
-        // {cv: false ,picSrc: "/Alex-James.jpg", englishName:"" ,persionName:"میرحسین"},
-        // {cv: false ,picSrc: "/Alex-James.jpg", englishName:"" ,persionName:"کامران عربی"},
+        {cv: true , picSrc: "/images/teachers/mirbagheri.jpg", reshte:"computer" ,englishName:"mirbagheri" ,persionName:"سید سعید میرباقری"},
+        {cv: false ,picSrc: "/images/teachers/kassaian.jpg", reshte:"computer" ,englishName:"kassaeian" ,persionName:"حمید کساییان"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"computer" ,englishName:"saeedi-nia" ,persionName:"رضا سعیدی نیا"},
+        {cv: true ,picSrc:  "/public/images/teachers/", reshte:"computer" ,englishName:"rahimian" ,persionName:"احسان رحیمیان"},
+        {cv: false ,picSrc: "/images/teachers/esmaeeli.jpg", reshte:"computer" ,englishName:"esmaeeli" ,persionName:"محمد اسماعیلی"},
+        {cv: false ,picSrc: "/images/teachers/joodaki.jpg", reshte:"hesabdari" ,englishName:"joodaki" ,persionName:"قاسم جودکی"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"farahi" ,persionName:"مجتبی فرحی"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"ranjbari" ,persionName:"علی رنجبری"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"kayyal" ,persionName:"حسین کیال"},
+        {cv: false ,picSrc: "/images/teachers/moalemian.jpg", reshte:"hesabdari" ,englishName:"moalemian" ,persionName:"مرتضی معلمیان"},
+        {cv: false ,picSrc: "/images/teachers/javedan.jpg", reshte:"oomomi" ,englishName:"javedan" ,persionName:"نصرالله جاودان"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"khodakarimi" ,persionName:"محمدرضا خداکریمی"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"aftab-lagha" ,persionName:"محمدرضا آفتاب‌لقا"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"darabi" ,persionName:"محمدرضا دارابی"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"zahiri" ,persionName:"مصطفی ظهیری"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"shahsavari" ,persionName:"محسن شهسواری"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"taghavai" ,persionName:"سید محمد تقوی"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"rostamian" ,persionName:"غلامعلی رستمیان"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"kia-shemshaki" ,persionName:"امیر کیا‌شمشکی"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"rezaiat" ,persionName:"علیرضا رضایت"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"baboee" ,persionName:"محمد بابویی"},
+        {cv: false ,picSrc: "/images/teachers/tajabadi.jpg", reshte:"computer" ,englishName:"taj-abadi" ,persionName:"محسن تاج‌آبادی"},
+        // {cv: false ,picSrc: "/images/Alex-James.jpg", englishName:"" ,persionName:"میرحسین"},
+        // {cv: false ,picSrc: "/images/Alex-James.jpg", englishName:"" ,persionName:"کامران عربی"},
     ]
     
     const TesetemonialCount = clientDisplayWidth < 700 ? 1 : clientDisplayWidth > 1000 ? 3 : 3 
@@ -64,7 +64,6 @@ const Home = () => {
                 <div className={styles.grid}>
                     <div className={styles.right}>
                         <h2>زندگینامه شهید صیاد شیرازی</h2>
-
                         <br/>
                     <p className={styles.picText}>
                         علی صیاد شیرازی (۱۳۲۳-۱۳۷۸ ه.ش)، از فرماندهان ارتش جمهوری اسلامی ایران که بعد از انقلاب اسلامی ایران و در جنگ تحمیلی عراق علیه ایران نقش موثری ایفا نموده و فرماندهی عملیات‌های پیروزمندانه ثامن الائمه، طریق القدس، فتح المبین و بیت المقدس در جنگ تحمیلی را بر عهده داشت.
@@ -83,7 +82,7 @@ const Home = () => {
                     </div>
                     <div className={styles.left} id='hoverer'>
                         <Image
-                            src={'/sayad.jpg'}
+                            src={'/images/sayad.jpg'}
                             alt='sayyad shirazi'
                             width={10000}
                             height={10000}
@@ -96,7 +95,7 @@ const Home = () => {
                 <div className={styles.grid}>
                     <div className={styles.right} id='hoverer'>
                         <Image
-                            src={'/Alex-James.jpg'}
+                            src={'/images/Alex-James.jpg'}
                             alt='photo'
                             width={19200}
                             height={10800}
@@ -153,15 +152,18 @@ const Home = () => {
                         <p className={styles.picText}>
                         </p>
                         <p className={styles.picText2}>
-                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد،
-                            در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها،
-                            و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی،
-                            و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                            ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، 
+                            و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه 
+                            روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                            ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلب
+                            د، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجا
+                            د کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان 
+                            مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                         </p>
                     </div>
                     <div className={styles.right} id='hoverer'>
                         <Image
-                            src={'/Alex-James.jpg'}
+                            src={'/images/fazeabadi.jpg'}
                             alt='photo'
                             height={10000}
                             width={10000}
@@ -172,7 +174,7 @@ const Home = () => {
                 </div>
             </div>
             <div className={styles.workers}>
-                <h2>کارکنان کنونی این مجموعه آموزش در حال حاضر شامل افراد حرفه ای مانند :</h2>
+                <h2>دبیران و کارکنان حرفه ای این مجموعه :</h2>
                 <Swiper
                     dir="rtl"
                     slidesPerView={TesetemonialCount}
@@ -197,11 +199,11 @@ const Home = () => {
                                     <Image
                                         src={item.picSrc}
                                         alt='workerPic'
-                                        width={50}
-                                        height={50}
+                                        width={60}
+                                        height={60}
                                         className={styles.image}
                                     />
-                                    <h3 className={styles.tName}>{item.persionName}</h3>
+                                    <h3 className={styles.tName}>آقای {item.persionName}</h3>
                                     {
                                         item.cv ?
                                         <Link href={`/teacher/${item.englishName}`} className={styles.cvClick}>

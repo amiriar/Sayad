@@ -57,11 +57,6 @@ const page = () => {
                                     <Link href={"tel:02133030001"} style={{color:"#f5f5f5",textDecoration:"none"}}>0001 3303 021</Link>
                                 </p>
                                 <p>
-                                    <BsFillTelephoneFill size={20}/>
-                                    تلفن: 
-                                    <Link href={"tel:"} style={{color:"#f5f5f5",textDecoration:"none"}}>شماره تلفن دیگر</Link>
-                                </p>
-                                <p>
                                     <PiAddressBookFill size={25}/>
                                     آدرس: 
                                     اتوبان شهید محلاتی، خیابان نبرد جنوبی، جنب دانشگاه آزاد تهران جنوب

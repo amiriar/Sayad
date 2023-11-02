@@ -1,11 +1,16 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
 .header{
+    max-width: 1920px;
+    min-width: 400px !important;
     display: flex;
     align-items: center;
     height: 4rem;
     background-color: #1c1c1c;
     color: #d4bd9d;
     font-family: 'Yekan', sans-serif;
+    /* margin: 0 !important;
+    padding: 0 !important; */
+    /* width: 100% !important; */
 }
 .navbar{
     height: 100%;
@@ -18,7 +23,7 @@
     height: 100%;
     width: 33%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 40px;
 }
@@ -76,4 +81,7 @@
         padding: 0;
         justify-content: space-evenly;
     }
+    /* .header{
+        width: 119%;
+    } */
 }

@@ -16,14 +16,14 @@ const Home = () => {
     
     const workers = [
         {cv: true , picSrc: "/images/teachers/SaeedMirbagheri.jpg", reshte:"computer" ,englishName:"mirbagheri" ,persionName:"سید سعید میرباقری"},
+        {cv: false ,picSrc: "/images/teachers/MohammadEsmaili.jpg", reshte:"computer" ,englishName:"esmaeeli" ,persionName:"محمد اسماعیلی"},
         {cv: false ,picSrc: "/images/teachers/HamidKasaian.jpg", reshte:"computer" ,englishName:"kassaeian" ,persionName:"حمید کساییان"},
         {cv: false ,picSrc: "/images/teachers/RezaSaeedinia.jpg", reshte:"computer" ,englishName:"saeedi-nia" ,persionName:"رضا سعیدی نیا"},
-        {cv: true ,picSrc:  "/public/images/teachers/", reshte:"computer" ,englishName:"rahimian" ,persionName:"احسان رحیمیان"},
-        {cv: false ,picSrc: "/images/teachers/MohammadEsmaili.jpg", reshte:"computer" ,englishName:"esmaeeli" ,persionName:"محمد اسماعیلی"},
-        {cv: false ,picSrc: "/images/teachers/joodaki.jpg", reshte:"hesabdari" ,englishName:"joodaki" ,persionName:"قاسم جودکی"},
+        // {cv: true ,picSrc:  "/public/images/teachers/", reshte:"computer" ,englishName:"rahimian" ,persionName:"احسان رحیمیان"},
+        {cv: false ,picSrc: "/images/teachers/ghasemjodaki.jpg", reshte:"hesabdari" ,englishName:"joodaki" ,persionName:"قاسم جودکی"},
         {cv: false ,picSrc: "/images/teachers/MohsenTajabadi.jpg", reshte:"computer" ,englishName:"taj-abadi" ,persionName:"محسن تاج‌آبادی"},
-        {cv: false ,picSrc: "/images/teachers/moalemian.jpg", reshte:"hesabdari" ,englishName:"moalemian" ,persionName:"مرتضی معلمیان"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"ranjbari" ,persionName:"علی رنجبری"},
+        {cv: false ,picSrc: "/images/teachers/mortezamoalemian.jpg", reshte:"hesabdari" ,englishName:"moalemian" ,persionName:"مرتضی معلمیان"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"ranjbari" ,persionName:"علی رنجبری"},
         // {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"farahi" ,persionName:"مجتبی فرحی"},
         // {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"kayyal" ,persionName:"حسین کیال"},
         // {cv: false ,picSrc: "/images/teachers/javedan.jpg", reshte:"oomomi" ,englishName:"javedan" ,persionName:"نصرالله جاودان"},
@@ -73,7 +73,8 @@ const Home = () => {
                     <p className={styles.picText2}>
                         حضرت آیت‌الله خامنه‌ای رهبر معظم انقلاب، در بخشی از پیامی که به مناسبت شهادت این شهید بزرگوار صادر نمودند چنین فرمودند:
                         «امیر سرافراز ارتش اسلام و سرباز صادق و فداکار دین و قرآن،
-                        نظامی مؤمن و پارسا و پرهیزکار، سپهبد علی صیاد شیرازی امروز به دست منافقین مجرم و خونخوار و روسیاه به شهادت رسید او مانند دیگر مردان حق، از روزی که قدم در راه انقلاب نهادند،
+                        نظامی مؤمن و پارسا و پرهیزکار، سپهبد علی صیاد شیرازی امروز به دست منافقین مجرم و خونخوار 
+                        و روسیاه به شهادت رسید او مانند دیگر مردان حق، از روزی که قدم در راه انقلاب نهادند،
                         همواره سر و جان خود را برای نثار در راه خدا به روی دست داشتند.
                         سرزمین‌های داغ خوزستان و گردنه‌های برافراشته کردستان سال‌ها شاهد آمادگی و فداکاری این انسان پاک نهاد و مصمم و شجاع بوده است...»
                     </p>
@@ -83,9 +84,8 @@ const Home = () => {
                         <Image
                             src={'/images/sayad.jpg'}
                             alt='sayyad shirazi'
-                            width={10000}
-                            height={10000}
-                            // layout='responsive'
+                            width={1000}
+                            height={1000}
                             style={imageStyles}
                             className={styles.hover}
                         />
@@ -96,8 +96,8 @@ const Home = () => {
                         <Image
                             src={'/images/background/3.jpg'}
                             alt='photo'
-                            width={19200}
-                            height={10800}
+                            width={10000}
+                            height={10000}
                             style={imageStyles}
                             className={styles.hover}
                         />
@@ -148,7 +148,6 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <hr color='#3d3e3e'/>
                 <div className={styles.grid}>
                     <div className={styles.left}>
                         <h2>درباره مدیریت این مجموعه..</h2><br/>
@@ -205,6 +204,7 @@ const Home = () => {
                                         width={60}
                                         height={60}
                                         className={styles.image}
+                                        draggable={false}
                                     />
                                     <h3 className={styles.tName}>آقای {item.persionName}</h3>
                                     {

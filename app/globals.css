@@ -20,6 +20,8 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  margin-left: auto;
+  margin-right: auto;
 }
 body{
   background-color: #171717;

@@ -10,6 +10,7 @@
     font-family: 'Yekan', sans-serif;
     text-align: justify;
     text-justify: inter-word;
+
 }
 .aboutSection{
     background-color: #222222;
@@ -57,12 +58,17 @@
     border-radius: 0.51rem;
     box-sizing: border-box;
     padding: 1rem;
+    display: flex;
+    /* background-color: red; */
 }
 .contact p {
     display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
     align-items: center;
     gap: 10px;
     margin: 1rem;
+    justify-self: right;
 }
 
 .quoteDiv{

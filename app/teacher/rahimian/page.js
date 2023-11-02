@@ -89,8 +89,8 @@ const page = () => {
                                         <Image
                                             src={item}
                                             alt='workerPic'
-                                            width={10000}
-                                            height={10000}
+                                            width={1000}
+                                            height={1000}
                                             className={styles.image}
                                             layout='responsive'
                                         />
@@ -120,7 +120,7 @@ const page = () => {
                         columnClassName="my-masonry-grid_column"
                     >
                         {images.map((item ,index) => (
-                            <Image src={item} key={index} alt={index} width={10000} height={10000} className='pictureItem' draggable={false} />
+                            <Image src={item} key={index} alt={index} width={1000} height={1000} className='pictureItem' draggable={false} />
                         ))}
                     </Masonry>
                 </div>

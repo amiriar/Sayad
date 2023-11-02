@@ -186,7 +186,7 @@ const Home = () => {
                         enabled: true,
                     }}
                     autoplay={{
-                        delay: 2000,
+                        delay: 4000,
                         disableOnInteraction: false,
                     }}
                     modules={[Autoplay,Navigation, Pagination,Keyboard]}

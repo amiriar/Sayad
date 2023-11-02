@@ -84,7 +84,7 @@
 .contactsContainer{
     background-color: #1c1c1c;
     padding: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border-radius: 1rem;
 }
 .contacts{
@@ -98,11 +98,12 @@
 }
 .contacts div{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 10px;
     font-size: 1.2rem;
 }
 .links{
+    /* width: 100% ; */
     text-decoration: none;
     color: inherit;
 }

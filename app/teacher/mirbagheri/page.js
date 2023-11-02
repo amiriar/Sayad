@@ -56,6 +56,28 @@ const page = () => {
                         والات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                     </p>
                     <h2>این ها عکس مدارک و جوایز هستند ===</h2>
+
+                    <h2>راه های ارتباطی ایشان:</h2>
+                    <div className={styles.contacts}>
+                        <Link href={'tel:09000000000'} className={styles.links}>
+                            <div>
+                                <BsFillTelephoneFill size={23}/>
+                                <span>09000000000</span>
+                            </div>
+                        </Link>
+                        <Link href={'mailto:email'} className={styles.links}>
+                            <div>
+                                <MdEmail size={23}/>
+                                <span>email</span>
+                            </div>
+                        </Link>
+                        <Link href={'/'} className={styles.links}>
+                            <div>
+                                <CgWebsite size={23}/>
+                                <span>website</span>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
                 <div className={styles.left}>
                     {/* <Image
@@ -125,7 +147,7 @@ const page = () => {
                     </Masonry>
                 </div>
             </div>
-            <div className={styles.contactsContainer}>
+            {/* <div className={styles.contactsContainer}>
                 <h2>راه های ارتباطی ایشان:</h2>
                 <div className={styles.contacts}>
                     <Link href={'tel:09000000000'} className={styles.links}>
@@ -147,7 +169,7 @@ const page = () => {
                     </div>
                     </Link>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -48,13 +48,12 @@ const Home = () => {
         width:"100%",
         height:'100%',
         borderRadius:"1rem"
-        
-        /* Other inline styles for the Image component */
     };
 
     return (
         <main className={styles.pageBody}>
-            <div className={styles.pic}>
+            <div className={styles.pic}></div>
+            <div className={styles.context}>
                 <h1>
                     هنرستان شهید صیاد شیرازی
                 </h1>
@@ -95,7 +94,7 @@ const Home = () => {
                 <div className={styles.grid}>
                     <div className={styles.right} id='hoverer'>
                         <Image
-                            src={'/images/Alex-James.jpg'}
+                            src={'/images/background/3.jpg'}
                             alt='photo'
                             width={19200}
                             height={10800}

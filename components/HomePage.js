@@ -15,28 +15,28 @@ const Home = () => {
     const clientDisplayWidth = useClientDisplayWidth();
     
     const workers = [
-        {cv: true , picSrc: "/images/teachers/mirbagheri.jpg", reshte:"computer" ,englishName:"mirbagheri" ,persionName:"سید سعید میرباقری"},
-        {cv: false ,picSrc: "/images/teachers/kassaian.jpg", reshte:"computer" ,englishName:"kassaeian" ,persionName:"حمید کساییان"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"computer" ,englishName:"saeedi-nia" ,persionName:"رضا سعیدی نیا"},
+        {cv: true , picSrc: "/images/teachers/SaeedMirbagheri.jpg", reshte:"computer" ,englishName:"mirbagheri" ,persionName:"سید سعید میرباقری"},
+        {cv: false ,picSrc: "/images/teachers/HamidKasaian.jpg", reshte:"computer" ,englishName:"kassaeian" ,persionName:"حمید کساییان"},
+        {cv: false ,picSrc: "/images/teachers/RezaSaeedinia.jpg", reshte:"computer" ,englishName:"saeedi-nia" ,persionName:"رضا سعیدی نیا"},
         {cv: true ,picSrc:  "/public/images/teachers/", reshte:"computer" ,englishName:"rahimian" ,persionName:"احسان رحیمیان"},
-        {cv: false ,picSrc: "/images/teachers/esmaeeli.jpg", reshte:"computer" ,englishName:"esmaeeli" ,persionName:"محمد اسماعیلی"},
+        {cv: false ,picSrc: "/images/teachers/MohammadEsmaili.jpg", reshte:"computer" ,englishName:"esmaeeli" ,persionName:"محمد اسماعیلی"},
         {cv: false ,picSrc: "/images/teachers/joodaki.jpg", reshte:"hesabdari" ,englishName:"joodaki" ,persionName:"قاسم جودکی"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"farahi" ,persionName:"مجتبی فرحی"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"ranjbari" ,persionName:"علی رنجبری"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"kayyal" ,persionName:"حسین کیال"},
+        {cv: false ,picSrc: "/images/teachers/MohsenTajabadi.jpg", reshte:"computer" ,englishName:"taj-abadi" ,persionName:"محسن تاج‌آبادی"},
         {cv: false ,picSrc: "/images/teachers/moalemian.jpg", reshte:"hesabdari" ,englishName:"moalemian" ,persionName:"مرتضی معلمیان"},
-        {cv: false ,picSrc: "/images/teachers/javedan.jpg", reshte:"oomomi" ,englishName:"javedan" ,persionName:"نصرالله جاودان"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"khodakarimi" ,persionName:"محمدرضا خداکریمی"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"aftab-lagha" ,persionName:"محمدرضا آفتاب‌لقا"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"darabi" ,persionName:"محمدرضا دارابی"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"zahiri" ,persionName:"مصطفی ظهیری"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"shahsavari" ,persionName:"محسن شهسواری"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"taghavai" ,persionName:"سید محمد تقوی"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"rostamian" ,persionName:"غلامعلی رستمیان"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"kia-shemshaki" ,persionName:"امیر کیا‌شمشکی"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"rezaiat" ,persionName:"علیرضا رضایت"},
-        {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"baboee" ,persionName:"محمد بابویی"},
-        {cv: false ,picSrc: "/images/teachers/tajabadi.jpg", reshte:"computer" ,englishName:"taj-abadi" ,persionName:"محسن تاج‌آبادی"},
+        {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"ranjbari" ,persionName:"علی رنجبری"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"farahi" ,persionName:"مجتبی فرحی"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"kayyal" ,persionName:"حسین کیال"},
+        // {cv: false ,picSrc: "/images/teachers/javedan.jpg", reshte:"oomomi" ,englishName:"javedan" ,persionName:"نصرالله جاودان"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"khodakarimi" ,persionName:"محمدرضا خداکریمی"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"aftab-lagha" ,persionName:"محمدرضا آفتاب‌لقا"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"darabi" ,persionName:"محمدرضا دارابی"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"zahiri" ,persionName:"مصطفی ظهیری"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"shahsavari" ,persionName:"محسن شهسواری"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"taghavai" ,persionName:"سید محمد تقوی"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"rostamian" ,persionName:"غلامعلی رستمیان"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"kia-shemshaki" ,persionName:"امیر کیا‌شمشکی"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"oomomi" ,englishName:"rezaiat" ,persionName:"علیرضا رضایت"},
+        // {cv: false ,picSrc: "/public/images/teachers/", reshte:"" ,englishName:"baboee" ,persionName:"محمد بابویی"},
         // {cv: false ,picSrc: "/images/Alex-James.jpg", englishName:"" ,persionName:"میرحسین"},
         // {cv: false ,picSrc: "/images/Alex-James.jpg", englishName:"" ,persionName:"کامران عربی"},
     ]
@@ -112,36 +112,40 @@ const Home = () => {
                             که به همت مدیریت جدید و کارکنان توانمند به یکی از بهترین هنرستان های رشته های کامپیوتر و 
                             حسابداری تبدیل شده است.
                             <br/>
-                            این هنرستان طی سال های اخیر موفقیت های بزرگی از جمله:
-                            <br/>
-                            <br/>
-                            <span className={styles.span}>
-                                موفقیت 1
-                            </span>
-                            <br/>
-                            <br/>
-                            <span className={styles.span}>
-                                موفقیت 2
-                            </span>
-                            <br/>
-                            <br/>
-                            را داشته است که با همت دبیران خوب و در سطح کشوری این هنرستان را جزو بهترین هنرستان های منطقه تبدیل میکند.
-                            <br/>
-                            <br/>
                         </p>
                         <p className={styles.picText}>
                             همچنین این هنرستان میزبان هنرجویان نخبه ای مانند:
                             <br/>
-                            <br/>
                             <span className={styles.span}>
-                            هنرجو 1
+                            امیررضا عبدالرحیمی
                             </span>
                             <br/>
-                            <br/>
                             <span className={styles.span}>
-                            هنرجو 2
+                            امیررضا عبدالرحیمی
                             </span>
                             <br/>
+                            <span className={styles.span}>
+                            امیررضا عبدالرحیمی
+                            </span>
+                            <br/>
+                            <span className={styles.span}>
+                            امیررضا عبدالرحیمی
+                            </span>
+                            <br/>
+                            <span className={styles.span}>
+                            امیررضا عبدالرحیمی
+                            </span>
+                            <br/>
+                            <span className={styles.span}>
+                            امیررضا عبدالرحیمی
+                            </span>
+                            <br/>
+                            <span className={styles.span}>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            و...
+                            </span>
+                            <br/>
+                            
                         </p>
                     </div>
                 </div>
@@ -150,8 +154,6 @@ const Home = () => {
                     <div className={styles.left}>
                         <h2>درباره مدیریت این مجموعه..</h2><br/>
                         <p className={styles.picText}>
-                        </p>
-                        <p className={styles.picText2}>
                             ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، 
                             و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه 
                             روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
@@ -159,6 +161,8 @@ const Home = () => {
                             د، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجا
                             د کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان 
                             مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                        <p className={styles.picText2}>
                         </p>
                     </div>
                     <div className={styles.right} id='hoverer'>

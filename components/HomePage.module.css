@@ -63,15 +63,12 @@
 
 .workers{
     font-family: 'Yekan', sans-serif;
-
     padding-top: 2rem;
     color: #f5f5f5;
 }
 .span{
     font-family: 'Yekan', sans-serif;
-
     font-size: 1.3rem;
-
 }
 .grid{
     display: grid;
@@ -180,19 +177,19 @@
         font-size: 1rem;
     }
     .workers h2{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
 @media(max-width: 640px) {
     .workers h2{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 }
 
 @media(max-width: 500px) {
     .workers h2{
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 
     .swiperSlider {
@@ -209,7 +206,7 @@
 
 @media(max-width: 400px) {
     .workers h2{
-        font-size: 0.6rem;
+        font-size: 1.2rem;
     }
     .left{
         border-radius: 0;

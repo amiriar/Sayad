@@ -29,6 +29,12 @@
     display: flex;
     align-items: center;
 }
+
+.creators{
+    text-decoration: none;
+    color: rgb(136, 182, 182);
+}
+
 @media(max-width: 550px) {
     .text{
         font-size: 0.8rem;

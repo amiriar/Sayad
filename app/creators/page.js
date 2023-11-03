@@ -15,7 +15,7 @@ const page = () => {
                 <div className={styles.right}>
                     <div className={styles.text}>
                         <h2>امیررضا عبدالرحیمی</h2><br/>
-                        <p>
+                        <p className={styles.about}>
                             ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
                             اپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
                             و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود 
@@ -28,44 +28,76 @@ const page = () => {
                         </p>
                     </div><br/>
                     <div className={styles.icons}>
-                        <Link href={'/'}>
-                            <FaTelegram size={20} color='#f5f5f5'/>
-                        </Link>
-                        <Link href={'/'}>
-                            <AiFillInstagram size={24} color='#f5f5f5'/>
-                        </Link>
-                        <Link href={'/'}>
-                            <BsGithub size={22} color='#f5f5f5'/>
-                        </Link>
-                        <Link href={'/'}>
-                            <BsLinkedin size={20} color='#f5f5f5' />
-                        </Link>
+                    <Link href={'/'}>
+                                {/* <FaTelegram size={20} color='#f5f5f5'/> */}
+                                <Image
+                                    src={'/images/icons/instagram.png'}
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                    className={styles.imageIcon}
+                                />
+                            </Link>
+                            <Link href={'/'}>
+                                {/* <AiFillInstagram size={24} color='#f5f5f5'/> */}
+                                <Image
+                                    src={'/images/icons/telegram.png'}
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                    className={styles.imageIcon}
+                                />
+                            </Link>
+                            <Link href={'/'}>
+                                {/* <BsGithub size={22} color='#f5f5f5'/> */}
+                                <Image
+                                    src={'/images/icons/linkedin.png'}
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                    className={styles.imageIcon}
+                                />
+                            </Link>
+                            <Link href={'/'}>
+                                {/* <BsLinkedin size={20} color='#f5f5f5' /> */}
+                                <Image
+                                    src={'/images/icons/github.png'}
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                    className={styles.imageIcon}
+                                />
+                            </Link>
                     </div>
                 </div>
                 <div className={styles.left1}>
-                    <Image
-                        src={'/images/creators/Sup.jpg'}
-                        alt='photo'
-                        width={1000}
-                        height={1000}
-                        className={styles.pic}
-                    />
+                    <div className={styles.imageTag}>
+                        <Image
+                            src={'/images/creators/Sup.jpg'}
+                            alt='photo'
+                            width={1000}
+                            height={1000}
+                            className={styles.pic}
+                        />
+                    </div>
                 </div>
             </div>
             <div className={styles.grid}>
                 <div className={styles.left2}>
-                    <Image
-                        src={'/images/creators/soroush-mashayekhi.jpg'}
-                        alt='photo'
-                        width={1000}
-                        height={1000}
-                        className={styles.pic}
-                    />
+                    <div className={styles.imageTag}>
+                        <Image
+                            src={'/images/creators/soroush-mashayekhi.jpg'}
+                            alt='photo'
+                            width={1000}
+                            height={1000}
+                            className={styles.pic}
+                        />  
+                    </div>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.text}>
                         <h2>سروش مشایخی</h2><br/>
-                        <p>
+                        <p className={styles.about}>
                             ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
                             اپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
                             و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود 
@@ -79,16 +111,44 @@ const page = () => {
                     </div><br/>
                     <div className={styles.icons}>
                             <Link href={'/'}>
-                                <FaTelegram size={20} color='#f5f5f5'/>
+                                {/* <FaTelegram size={20} color='#f5f5f5'/> */}
+                                <Image
+                                    src={'/images/icons/instagram.png'}
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                    className={styles.imageIcon}
+                                />
                             </Link>
                             <Link href={'/'}>
-                                <AiFillInstagram size={24} color='#f5f5f5'/>
+                                {/* <AiFillInstagram size={24} color='#f5f5f5'/> */}
+                                <Image
+                                    src={'/images/icons/telegram.png'}
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                    className={styles.imageIcon}
+                                />
                             </Link>
                             <Link href={'/'}>
-                                <BsGithub size={22} color='#f5f5f5'/>
+                                {/* <BsGithub size={22} color='#f5f5f5'/> */}
+                                <Image
+                                    src={'/images/icons/linkedin.png'}
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                    className={styles.imageIcon}
+                                />
                             </Link>
                             <Link href={'/'}>
-                                <BsLinkedin size={20} color='#f5f5f5' />
+                                {/* <BsLinkedin size={20} color='#f5f5f5' /> */}
+                                <Image
+                                    src={'/images/icons/github.png'}
+                                    alt=''
+                                    width={50}
+                                    height={50}
+                                    className={styles.imageIcon}
+                                />
                             </Link>
                     </div>
                 </div>

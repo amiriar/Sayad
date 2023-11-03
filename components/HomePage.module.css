@@ -8,6 +8,7 @@
     background-position: 50% 100%;
     background-repeat: no-repeat;
     justify-self: center;
+    position: relative;
 }
 .context h1{
     font-family: 'Yekan', sans-serif;

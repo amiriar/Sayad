@@ -92,7 +92,7 @@ const page = () => {
                                             width={1000}
                                             height={1000}
                                             className={styles.image}
-                                            layout='responsive'
+                                            // layout='responsive'
                                         />
                                 </SwiperSlide>
                             ))

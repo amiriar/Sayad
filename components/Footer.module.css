@@ -4,7 +4,6 @@
     font-family: 'Yekan', sans-serif;
     display: flex;
     max-width: 1920px;
-    min-width: 400px !important;
     justify-content: space-evenly;
     background-color: #1c1c1c;
     border-top: black 1px solid;
@@ -45,5 +44,10 @@
 @media(max-width: 500px) {
     .smallHid{
         display: none;
+    }
+}
+@media(max-width: 400px) {
+    .footer{
+        max-width: 400px;
     }
 }

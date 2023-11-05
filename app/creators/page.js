@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const Page = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='mt'>
         <div className={styles.grid}>
             <div className={styles.right}>
             <div className={styles.text}>

@@ -21,7 +21,7 @@ const Home = () => {
         {cv: false ,picSrc: "/images/teachers/RezaSaeedinia.jpg", reshte:"computer" ,englishName:"saeedi-nia" ,persionName:"رضا سعیدی نیا"},
         // {cv: true ,picSrc:  "/public/images/teachers/", reshte:"computer" ,englishName:"rahimian" ,persionName:"احسان رحیمیان"},
         {cv: false ,picSrc: "/images/teachers/ghasemjodaki.jpg", reshte:"hesabdari" ,englishName:"joodaki" ,persionName:"قاسم جودکی"},
-        {cv: false ,picSrc: "/images/teachers/MohsenTajabadi.jpg", reshte:"computer" ,englishName:"taj-abadi" ,persionName:"محسن تاج‌آبادی"},
+        {cv: true ,picSrc: "/images/teachers/MohsenTajabadi.jpg", reshte:"computer" ,englishName:"taj-abadi" ,persionName:"محسن تاج‌آبادی"},
         {cv: false ,picSrc: "/images/teachers/mortezamoalemian.jpg", reshte:"hesabdari" ,englishName:"moalemian" ,persionName:"مرتضی معلمیان"},
         // {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"ranjbari" ,persionName:"علی رنجبری"},
         // {cv: false ,picSrc: "/public/images/teachers/", reshte:"hesabdari" ,englishName:"farahi" ,persionName:"مجتبی فرحی"},
@@ -51,7 +51,7 @@ const Home = () => {
     };
 
     return (
-        <main className={styles.pageBody}>
+        <main className={styles.pageBody} id='mt'>
             <div className={styles.pic}></div>
             <div className={styles.context}>
                 <h1>

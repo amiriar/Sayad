@@ -38,7 +38,7 @@ const page = () => {
 
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='mt'>
             <div className={styles.cv}>
                 <div className={styles.right}>
                     <p className={styles.text}>

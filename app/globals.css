@@ -25,6 +25,7 @@
 }
 body{
   background-color: #171717;
+
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -34,7 +35,7 @@ body{
 ::-webkit-scrollbar-track {
   background: #bbbbbb; 
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
@@ -45,7 +46,9 @@ body{
   background: #555; 
 }
 
-
+#mt{
+  margin-top: 4rem;
+}
 
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */

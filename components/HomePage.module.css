@@ -1,6 +1,6 @@
 .pic{
     box-sizing: border-box;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     min-height: 90vh;
     background-image: url('../public/images/background/3.jpg');
     filter: blur(2px);

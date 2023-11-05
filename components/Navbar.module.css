@@ -1,26 +1,41 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
-.header{
-    max-width: 1920px;
-    /* min-width: 400px !important; */
+.header {
+    width: 99%;
+    max-width: 1920px; /* Set the maximum width to 1920px */
+    margin: 0.5rem auto 0 auto; /* Center the navigation bar horizontally */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     height: 4rem;
+    justify-content: center; /* Center the content horizontally */
+    border-radius: 15px;
     background-color: #1c1c1c;
     color: #d4bd9d;
     font-family: 'Yekan', sans-serif;
+    z-index: 1000000;
+}
+
+/* The rest of your CSS remains unchanged */
+
+.loginIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .navbar{
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .navItems{
     height: 100%;
-    width: 33%;
+    /* width: 33%; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
 }
@@ -58,6 +73,11 @@
         padding-right: 10px;
     }   
 }
+@media(max-width: 430px) {
+    .logoName{
+        display: none;
+    }
+}
 @media(max-width: 400px) {
     .navItems{
         width: 50%;
@@ -71,15 +91,12 @@
     }
 }
 @media(max-width: 340px) {
-    .name{
-        display: none;
-    }
     .navItems{
-        width: 100%;
-        gap: 50px;
+        width: 70%;
+        /* gap: 50px; */
         margin: 0;
         padding: 0;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        margin-left: 0.5rem;
     }
-    
 }

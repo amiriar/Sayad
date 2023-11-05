@@ -10,7 +10,7 @@ const page = () => {
             <Navbar/>
                 <div className={styles.container} id='mt'>
                     <div className={styles.imageContainer}>
-                        <Image src={'/images/teachers/SaeedMirbagheri.jpg'} alt="Teacher" width={400} height={400} draggable={false}/>
+                        <Image src={'/images/teachers/RezaSaeedinia.jpg'} alt="Teacher" width={400} height={400} draggable={false}/>
                     </div>
                     <div className={styles.content}>
                         <h1>درباره معلم</h1>

@@ -1,4 +1,3 @@
-
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -14,6 +13,7 @@
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   width: 100%;
   background-color: #222222;
 }
@@ -56,7 +56,7 @@
   margin: 10px 0;
 }
 
-@media(max-width: 844px) {
+@media(max-width: 845px) {
   .imageContainer img{
     position: static;
   }
@@ -68,10 +68,9 @@
     padding-bottom: 1rem;
   }
 }
-
-@media(max-width: 440px) {
+@media(max-width: 450px) {
   .container{
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 }

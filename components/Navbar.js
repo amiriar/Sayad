@@ -14,9 +14,10 @@ const Navbar = () => {
                     </div>
                     <div className={styles.loginIcon}>
                         <Image 
-                            src={'/images/icons/favicon.ico'}
+                            src={'/images/icons/sayad-icon_gold.png'}
                             width={50}
                             height={50}
+                            draggable={false}
                         />
                     </div>
                     <div className={styles.navItems}>

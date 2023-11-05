@@ -1,0 +1,53 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+
+.footer{
+    font-family: 'Yekan', sans-serif;
+    display: flex;
+    max-width: 1920px;
+    justify-content: space-evenly;
+    background-color: #1c1c1c;
+    border-top: black 1px solid;
+    height: 3rem;
+    color: #d4bd9d;
+    align-items: center;
+}
+.text{
+    padding-right: 1rem;
+}
+.icon{
+    padding-left: 2rem;
+    display: flex;
+    height: 100%;
+    gap: 1.5rem;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+
+.creators{
+    text-decoration: none;
+    color: rgb(136, 182, 182);
+}
+
+@media(max-width: 550px) {
+    .text{
+        font-size: 0.8rem;
+    }
+    
+}
+@media(max-width: 500px) {
+    .smallHid{
+        display: none;
+    }
+}
+@media(max-width: 400px) {
+    .footer{
+        width: 400px;
+    }
+}

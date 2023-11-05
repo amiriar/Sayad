@@ -1,11 +1,6 @@
 .header {
-    width: 99%;
-    max-width: 1920px;
-    margin: 0.5rem auto 0 auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,8 +9,9 @@
     background-color: #1c1c1c;
     color: #d4bd9d;
     font-family: 'Yekan', sans-serif;
-    z-index: 1000000;
+    z-index: 1000;
 }
+
 
 .loginIcon{
     display: flex;
@@ -31,7 +27,6 @@
 }
 .navItems{
     height: 100%;
-    /* width: 33%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,13 +38,14 @@
     color: inherit;
 }
 
+
 @media(max-width: 710px) {
     .header{
         flex-direction: column;
-        flex-wrap: wrap;
         font-size: 0.8rem;
     }
 }
+
 @media(max-width: 600px) {
     .navbar{
         justify-content: space-between;
@@ -62,6 +58,19 @@
         font-size: 1rem;
     }
 }
+
+
+@media(max-width: 430px) {
+    .logoName {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        max-width: 100%; /* Change max-width to 100% */
+        margin: 0;
+        border-radius: 0;
+    }
+}
 @media(max-width: 425px) {
     .navItems{
         width: 45%;
@@ -72,16 +81,7 @@
         padding-right: 10px;
     }   
 }
-@media(max-width: 430px) {
-    .logoName{
-        display: none;
-    }
-    .header{
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
-}
+
 @media(max-width: 400px) {
     .navItems{
         width: 50%;
@@ -91,16 +91,15 @@
         font-size: 0.8rem;
     }
     .header{
-        max-width: 400px;
+        max-width: 400px !important;
     }
 }
 @media(max-width: 340px) {
-    .navItems{
-        width: 60%;
-        /* gap: 50px; */
-        margin: 0;
-        padding: 0;
-        justify-content: space-around;
-        margin-left: 0.5rem;
-    }
+        .navItems {
+            width: 60%;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+            margin-left: 0.5rem;
+        }
 }

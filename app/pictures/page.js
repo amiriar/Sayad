@@ -3,6 +3,8 @@ import React from 'react'
 import styles from './styles/pictures.module.css'
 import Image from 'next/image'
 import Masonry from 'react-masonry-css'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const page = () => {
 
@@ -36,17 +38,21 @@ const page = () => {
     ]
 
     return (
-        <div>
-            <Masonry
-                breakpointCols={breakpoints}
-                className="my-masonry-grid"
-                columnClassName="my-masonry-grid_column"
-            >
-                {images.map((item ,index) => (
-                    <Image src={item} key={index} alt={index} width={1000} height={1000} className='pictureItem' draggable={false} />
-                ))}
-            </Masonry>
-        </div>
+        <>
+            <Navbar/>    
+                <div>
+                    <Masonry
+                        breakpointCols={breakpoints}
+                        className="my-masonry-grid"
+                        columnClassName="my-masonry-grid_column"
+                    >
+                        {images.map((item ,index) => (
+                            <Image src={item} key={index} alt={index} width={1000} height={1000} className='pictureItem' draggable={false} />
+                        ))}
+                    </Masonry>
+                </div>
+            <Footer/>
+        </>
     )
 }
 

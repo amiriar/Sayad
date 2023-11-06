@@ -90,8 +90,7 @@ const page = () => {
                             <p>
                             متخصص شبکه . سرور . مایکروسافت . سیسکو . میکروتیک . ویپ ایزابل .
                             . شبکه مانیتورینگ . MTCRE . MTCNA . MCSE2012 . CCNP . CCNA
-                            . mtcume . AD Audit . Manage engine . آشنایی با Opmanager .
-                            active directory
+                            . mtcume . AD Audit . Manage engine . active directory
                             </p>
                         </div>
                         <div className={styles.job}>

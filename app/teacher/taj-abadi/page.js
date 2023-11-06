@@ -17,7 +17,7 @@ const page = () => {
                     {/* <div className={styles.imageContainer}>
                         <Image src={'/images/teachers/MohsenTajabadi.jpg'} alt="Teacher" width={400} height={400} draggable={false}/>
                     </div> */}
-                    <div className={styles.content}>
+                    {/* <div className={styles.content}>
                         <h1 className={styles.name}>استاد محسن تاج آبادی</h1>
                         <div className={styles.about}>
                             <p>
@@ -108,7 +108,7 @@ const page = () => {
                                 ntwrkmaster@gmail.com
                             </Link>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             <ResumeFooter/>
         </>

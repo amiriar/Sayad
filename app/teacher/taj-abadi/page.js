@@ -6,11 +6,13 @@ import Footer from '@/components/Footer'
 
 import { MdEmail } from 'react-icons/md'
 import Link from 'next/link'
+import ResumeNavbar from '@/components/ResumeNavbar'
+import ResumeFooter from '@/components/ResumeFooter'
 
 const page = () => {
     return (
         <>
-            <Navbar/>
+            <ResumeNavbar/>
                 <div className={styles.container} id='mt'>
                     <div className={styles.imageContainer}>
                         <Image src={'/images/teachers/MohsenTajabadi.jpg'} alt="Teacher" width={400} height={400} draggable={false}/>
@@ -108,7 +110,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            <Footer/>
+            <ResumeFooter/>
         </>
     )
 }

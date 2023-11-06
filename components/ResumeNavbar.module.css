@@ -91,7 +91,8 @@
         font-size: 0.8rem;
     }
     .header{
-        max-width: 400px !important;
+        min-width: 400px !important;
+
     }
 }
 @media(max-width: 340px) {

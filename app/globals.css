@@ -48,6 +48,7 @@ body{
 }
 
 #mt{
+  box-sizing: border-box;
   margin-top: 4rem;
 }
 

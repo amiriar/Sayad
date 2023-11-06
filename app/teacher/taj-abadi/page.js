@@ -13,7 +13,7 @@ const page = () => {
     return (
         <>
             <ResumeNavbar/>
-                {/* <div className={styles.container} id='mt'>
+                <div className={styles.container} id='mt'>
                     <div className={styles.imageContainer}>
                         <Image src={'/images/teachers/MohsenTajabadi.jpg'} alt="Teacher" width={400} height={400} draggable={false}/>
                     </div>
@@ -109,7 +109,7 @@ const page = () => {
                             </Link>
                         </div>
                     </div>
-                </div> */}
+                </div>
             <ResumeFooter/>
         </>
     )

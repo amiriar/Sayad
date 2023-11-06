@@ -12,7 +12,7 @@ import ResumeFooter from '@/components/ResumeFooter'
 const page = () => {
     return (
         <>
-            <ResumeNavbar/>
+            {/* <ResumeNavbar/> */}
                 <div className={styles.container} id='mt'>
                     <div className={styles.imageContainer}>
                         <Image src={'/images/teachers/MohsenTajabadi.jpg'} alt="Teacher" width={400} height={400} draggable={false}/>
@@ -110,7 +110,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-            <ResumeFooter/>
+            {/* <ResumeFooter/> */}
         </>
     )
 }

@@ -9,6 +9,7 @@
   color: #ffffff;
   background-color: #1c1c1c;
   font-family: 'Yekan', sans-serif;
+  max-width: 1920px;
 }
 .imageContainer {
   border-radius: 10px;

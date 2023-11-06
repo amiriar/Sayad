@@ -3,11 +3,14 @@ import React from 'react'
 import styles from './page.module.css'
 import ResumeNavbar from '@/components/ResumeNavbar'
 import ResumeFooter from '@/components/ResumeFooter'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const page = () => {
     return (
         <>
-            <ResumeNavbar/>
+            {/* <ResumeNavbar/> */}
+            <Navbar/>
                 <div className={styles.container} id='mt'>
                     <div className={styles.imageContainer}>
                         <Image src={'/images/teachers/SaeedMirbagheri.jpg'} alt="Teacher" width={400} height={400} draggable={false}/>
@@ -49,7 +52,8 @@ const page = () => {
                         <p>تلفن: +123-456-7890</p>
                     </div>
                 </div>
-            <ResumeFooter/>
+            <Footer/>
+            {/* <ResumeFooter/> */}
         </>
     )
 }

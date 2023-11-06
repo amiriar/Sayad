@@ -75,7 +75,7 @@ const page = () => {
                                 
                             </div>
                             <div className={styles.left}>
-                                <div id="map" className={styles.homeMap} ></div>
+                                <div id="map" className={styles.homeMap}></div>
                             </div>
                         </div>
                     </section>

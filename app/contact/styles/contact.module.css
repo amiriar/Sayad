@@ -98,9 +98,12 @@
         height: 40vh;
     }
     .right{
-        height: 80vh;
+        height: 90vh;
     }
     .homeMap{
         height: 40vh;
+    }
+    .contact{
+        height: 60vh;
     }
 }

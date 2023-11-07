@@ -212,10 +212,10 @@ const Home = () => {
                                             />
                                             <h3 className={styles.tName}>آقای {item.persionName}</h3>
                                             {
-                                                item.cv ?
-                                                <Link href={`/teacher/${item.englishName}`} className={styles.cvClick}>
-                                                    برای دیدن رزومه ایشان اینجا کلیک کنید.
-                                                </Link> : 
+                                                // item.cv ?
+                                                // <Link href={`/teacher/${item.englishName}`} className={styles.cvClick}>
+                                                //     برای دیدن رزومه ایشان اینجا کلیک کنید.
+                                                // </Link> : 
                                                 item.reshte === "computer" ?
                                                 "دبیر تخصصی کامپیوتر" : 
                                                 item.reshte === "hesabdari" ? 

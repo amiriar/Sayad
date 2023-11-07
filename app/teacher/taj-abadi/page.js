@@ -93,13 +93,13 @@ const page = () => {
                             . mtcume . AD Audit . Manage engine . active directory
                             </p>
                         </div>
-                        <div className={styles.job}>
+                        {/* <div className={styles.job}>
                             <h1>جوایز کسب شده توسط ایشان</h1>
                             <ul>
                                 <li>جایزه بهترین معلم 1400</li>
                                 <li>جایزه عالی در تدریس 1399</li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div>
                             <h1>❓ با ایشان در ارتباط باشید</h1>
                             <Link href={'mailto:ntwrkmaster@gmail.com'} className={styles.link}>

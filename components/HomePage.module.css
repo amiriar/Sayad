@@ -2,8 +2,7 @@
     box-sizing: border-box;
     /* margin-top: 1rem; */
     min-height: 90vh;
-    background-image: url('../public/images/background/3.jpg');
-    filter: blur(2px);
+    background-image: url('../public/images/background/sayad_shirazi.jpg');
     background-size: cover;
     background-position: 50% 100%;
     background-repeat: no-repeat;
@@ -64,7 +63,6 @@
     display: flex;
     justify-content: center;
     font-family: 'Yekan', sans-serif;
-
     padding: 1rem;
     flex-direction: column;
     background-color: #1e1e1e;
@@ -73,7 +71,6 @@
     color: #f5f5f5;
     margin-top: 5rem;
 }
-
 
 .workers{
     font-family: 'Yekan', sans-serif;

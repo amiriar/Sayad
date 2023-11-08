@@ -53,12 +53,12 @@ const page = () => {
                                         <p>
                                             <BsFillTelephoneFill size={20}/>
                                             تلفن: 
-                                            <Link href={"tel:02133739091"} style={{color:"#f5f5f5",textDecoration:"none"}}>9091 3373 021</Link>
+                                            <Link href={"tel:02133739091"} style={{color:"#d4bd9d",textDecoration:"none"}}>9091 3373 021</Link>
                                         </p>
                                         <p>
                                             <BsFillTelephoneFill size={20}/>
                                             تلفن: 
-                                            <Link href={"tel:02133030001"} style={{color:"#f5f5f5",textDecoration:"none"}}>0001 3303 021</Link>
+                                            <Link href={"tel:02133030001"} style={{color:"#d4bd9d",textDecoration:"none"}}>0001 3303 021</Link>
                                         </p>
                                         <p>
                                             <PiAddressBookFill size={25}/>

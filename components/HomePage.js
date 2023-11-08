@@ -46,10 +46,10 @@ const Home = () => {
     const TesetemonialCount = clientDisplayWidth < 700 ? 1 : clientDisplayWidth > 1000 ? 3 : 3 
 
     const imageStyles = {
-        border: '2px solid #333',
+        /*border: '2px solid #333',*/
         width:"100%",
         height:'100%',
-        borderRadius:"1rem"
+        /*borderRadius:"1rem"*/
     };
 
     return (
@@ -58,15 +58,15 @@ const Home = () => {
                 <main className={styles.pageBody} >
                     <div className={styles.pic}></div>
                     <div className={styles.context}>
-                        <h1>
+                        <h1 className={styles.schoolname}>
                             هنرستان شهید صیاد شیرازی
                         </h1>
-                        <h5 style={{color:"#dbdbdb"}}>واقع شده در منطقه 14 جنب دانشگاه آزاد تهران-جنوب</h5>
+                        <h5 style={{color:"#fafafa"}} className={styles.schooladdress}>واقع شده در منطقه 14 جنب دانشگاه آزاد تهران جنوب</h5>
                     </div>
                     <div className={styles.mainText}>
                         <div className={styles.grid}>
                             <div className={styles.right}>
-                                <h2>زندگینامه شهید صیاد شیرازی</h2>
+                                <h2 className={styles.h2}>زندگینامه شهید صیاد شیرازی</h2>
                                 <br/>
                             <p className={styles.picText}>
                                 علی صیاد شیرازی (۱۳۲۳-۱۳۷۸ ه.ش)، از فرماندهان ارتش جمهوری اسلامی ایران که بعد از انقلاب اسلامی ایران و در جنگ تحمیلی عراق علیه ایران نقش موثری ایفا نموده و فرماندهی عملیات‌های پیروزمندانه ثامن الائمه، طریق القدس، فتح المبین و بیت المقدس در جنگ تحمیلی را بر عهده داشت.
@@ -111,20 +111,27 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className={styles.left}>
-                                    <h2>
+                                    <h2 className={styles.h2}>
                                         درباره این هنرستان
                                     </h2>
                                 <p className={styles.picText}>
-                                    هنرستان شهید صیاد شیرازی تاسیس شده در سال 1382، این هنرستان
-                                    که به همت مدیریت جدید و کارکنان توانمند به یکی از بهترین هنرستان های رشته های کامپیوتر و 
-                                    حسابداری تبدیل شده است.
+                                    هنرستان صیاد شیرازی در سال 1382 در منطقه ی 14 تهران تاسیس شد ، این هنرستان دارای سه سایت کامپیوتر برای رشته کامپیوتر و یک سایت کامپیوتر برای رشته ی حساب داری میباشد.
+
+                                    یک حیاط بزرگ برای اجرای همزمان ورزش فوتبال و والیبال و بسکتبال میباشد.
+
+                                    دارای نمازخانه جهت برگزاری نماز جماعت و مراسم و جشن های متفاوت میباشد.
+
+
                                     <br/>
+                                </p>
+                                <p className={styles.picText}>
+                                    این هنرستان به همت مدیریت جدید و کارکنان تلاشگر به یکی از هنرستان های نمونه رشته کامپیوتر در منطقه تبدیل شده است.
                                 </p>
                                 <p className={styles.picText}>
                                     همچنین این هنرستان میزبان هنرجویان نخبه ای مانند:
                                     <br/>
                                     <span className={styles.span}>
-                                    امیررضا عبدالرحیمی
+                                    سروش مشایخی
                                     </span>
                                     <br/>
                                     <span className={styles.span}>
@@ -132,33 +139,21 @@ const Home = () => {
                                     </span>
                                     <br/>
                                     <span className={styles.span}>
-                                    امیررضا عبدالرحیمی
+                                    سروش مشایخی
                                     </span>
                                     <br/>
                                     <span className={styles.span}>
                                     امیررضا عبدالرحیمی
                                     </span>
                                     <br/>
-                                    <span className={styles.span}>
-                                    امیررضا عبدالرحیمی
-                                    </span>
-                                    <br/>
-                                    <span className={styles.span}>
-                                    امیررضا عبدالرحیمی
-                                    </span>
-                                    <br/>
-                                    <span className={styles.span}>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    و...
-                                    </span>
-                                    <br/>
+                                    
                                     
                                 </p>
                             </div>
                         </div>
                         <div className={styles.grid}>
                             <div className={styles.left}>
-                                <h2>درباره مدیریت این مجموعه..</h2><br/>
+                                <h2 className={styles.h2}>درباره مدیریت این مجموعه..</h2><br/>
                                 <p className={styles.picText}>
                                     ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، 
                                     و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه 
@@ -186,7 +181,9 @@ const Home = () => {
                         </div>
                     </div>
                     <div className={styles.workers}>
-                        <h2>دبیران و کارکنان حرفه ای این مجموعه :</h2>
+                        <h2 className={styles.h2teach}>
+                            اساتید حرفه ای رشته های تخصصی این مجموعه
+                            </h2>
                         <Swiper
                             dir="rtl"
                             slidesPerView={TesetemonialCount}
@@ -201,8 +198,8 @@ const Home = () => {
                             }}
                             modules={[Autoplay,Navigation, Pagination,Keyboard]}
                             className={styles.mySwiper}
-                            loop={true}
-                            style={{marginTop: "2rem"}}
+                            loop={false}
+                            style={{marginTop: "1rem"}}
                         >
                             {
                                 workers.map((item) => (
@@ -211,8 +208,8 @@ const Home = () => {
                                             <Image
                                                 src={item.picSrc}
                                                 alt='workerPic'
-                                                width={60}
-                                                height={60}
+                                                width={75}
+                                                height={75}
                                                 className={styles.image}
                                                 draggable={false}
                                             />

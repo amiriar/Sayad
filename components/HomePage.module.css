@@ -18,14 +18,14 @@
 }
 
 .hover{
-    transition: all 0.2s;
+    transition: all 0.3s ;
 }
 
 .hover:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
-.context h1{
+.context h1 {
     font-family: 'Yekan', sans-serif;
 }
 .context{
@@ -42,10 +42,21 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    color: #f5f5f5;
+    color: #fafafa ;
     font-family: 'Yekan', sans-serif;
     /* background-color: blue; */
 }
+
+.schoolname::selection {
+    background-color: #1a1a1a7f;
+    color: #f1c587;
+}
+
+.schooladdress::selection {
+    background-color: #1a1a1a7f;
+    color: #f1c587;
+}
+
 .pageBody{
     max-width: 1920px;
     text-align: justify;
@@ -59,7 +70,8 @@
     justify-content: center;
     align-items: center;
     background-color: #1c1c1c;
-    box-shadow: 5px 5px rgb(61, 60, 60);
+    /*box-shadow: 5px 5px rgb(61, 60, 60); */
+    box-shadow: 6px 6px 6px rgb(46, 46, 46);
     border-radius: 0.5rem;
     cursor: pointer;
 }
@@ -72,17 +84,19 @@
 }
 .image{
     border-radius: 50%;
-    outline: 2px solid rgb(201, 195, 195);
+    /*outline: 1px solid rgb(95, 95, 95);*/
+    box-shadow: 2px 2px 16px rgb(46, 46, 46);
 }
 .mainText{
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     font-family: 'Yekan', sans-serif;
     padding: 1rem;
     flex-direction: column;
     background-color: #1e1e1e;
-    box-shadow: 5px 5px rgb(36, 35, 35);
+    box-shadow: 5px 5px 6px rgba(46, 46, 46, 0.646);
+    /*box-shadow: 5px 5px rgb(36, 35, 35);*/
     margin: 1rem;
     color: #f5f5f5;
     margin-top: 5rem;
@@ -91,7 +105,7 @@
 .workers{
     font-family: 'Yekan', sans-serif;
     padding-top: 2rem;
-    color: #f5f5f5;
+    color: #f1c587;
 }
 .span{
     font-family: 'Yekan', sans-serif;
@@ -106,10 +120,11 @@
     border-radius: 0.5rem;
     background-color: #232323;
     width: 100%;
+    transition: box-shadow 0.3s ease; 
 }
 .grid:hover{
-    transition: box-shadow 0.3s ease; 
-    box-shadow: 5px 5px rgb(58, 57, 57);
+    /*box-shadow:  6px 8px 6px rgba(95, 109, 61, 0.378);*/
+    box-shadow: 5px 5px 6px rgb(46, 46, 46);
 }
 
 .workers h2{
@@ -131,29 +146,52 @@
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
+    
 }
 
 .picText {
-    color: #818383;
+    color: #d4bd9d;
     padding: 10px 20px;
     transition: color 0.3s;
     cursor:default;
 }
 
 .picText:hover {
-    color: #cbcbcb;
+    color: #f1c587;
+    text-shadow: 0px 0px 6px rgba(226, 212, 192, 0.658);
+}
+
+.picText::selection {
+    background-color: #1a1a1a;
 }
 
 .picText2 {
-    color: #818383;
+    color: #d4bd9d;
     padding: 10px 20px;
     transition: color 0.3s;
     cursor:default;
 }
 
 .picText2:hover {
-    color: #cbcbcb;
+    color: #f1c587;
+    text-shadow: 0px 0px 6px rgba(226, 212, 192, 0.658);
+
 }
+.picText2::selection {
+    background-color: #1a1a1a;
+}
+.h2 {
+    color: #dfbe8f;
+}
+
+.h2::selection {
+    background-color: #1a1a1a;
+}
+
+.h2teach {
+    color: #d4bd9d;
+}
+
 /* 
 #hoverer{
     overflow: hidden;
@@ -170,6 +208,7 @@
 
 .tName{
     text-decoration: none;
+    text-shadow: 2px 3px 16px rgb(82, 82, 64);
 }
 
 .cvClick{

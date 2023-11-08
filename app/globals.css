@@ -24,6 +24,10 @@
   margin-right: auto;
   box-sizing: border-box;
 }
+*::selection {
+  background-color: #1a1a1a;
+}
+
 body{
   background-color: #171717;
 

@@ -34,20 +34,20 @@
     overflow: hidden;
   }
   
-  .pic:hover {
-    transform: scale(1.2);
-  }
+
+ 
   
   .about {
-    transition: color 0.2s;
+    transition: all 0.3s 0.15s;
   }
   
   .about::selection {
-    background-color: #000000;
+    background-color: #1a1a1a;
   }
   
   .about:hover {
-    color: #edbe7d;
+    color: #d2ae7d;
+    text-shadow: 0px 0px 6px rgba(226, 212, 192, 0.658);
   }
   
   .right {
@@ -55,30 +55,38 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 5px 5px 6px rgb(46, 46, 46);
     background-color: #232323;
     border-radius: 1rem;
     z-index: 100;
   }
   
   .text {
-    color: #e9e0d3;
+    color: #b8a489;
     transition: color 0.4s;
-    cursor: pointer;
+    cursor: default;
+
   }
   
-  .text:hover {
-    color: #dfb981;
-  }
   
+.creatorsname {
+  color: #edc894;
+}
+
   .pic {
     height: 100%;
     width: 400px;
     border-radius: 1rem;
     box-sizing: border-box;
     transition: box-shadow 0.3s;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
     box-sizing: border-box;
   }
+
+  .pic:hover {
+    transform: scale(1.06);
+  }
+
   .imageTag{
     height: 100%;
     border-radius: 1rem;

@@ -55,7 +55,7 @@ const Home = () => {
     return (
         <>
             <Navbar/>
-                <main className={styles.pageBody} id='mt'>
+                <main className={styles.pageBody} >
                     <div className={styles.pic}></div>
                     <div className={styles.context}>
                         <h1>
@@ -85,26 +85,30 @@ const Home = () => {
 
                             </div>
                             <div className={styles.left} id='hoverer'>
-                                <Image
-                                    src={'/images/sayad.jpg'}
-                                    alt='sayyad shirazi'
-                                    width={1000}
-                                    height={1000}
-                                    style={imageStyles}
-                                    className={styles.hover}
-                                />
+                                <div className={styles.overflow}>
+                                    <Image
+                                        src={'/images/sayad3jpg.jpg'}
+                                        alt='sayyad shirazi'
+                                        width={10000}
+                                        height={10000}
+                                        style={imageStyles}
+                                        className={styles.hover}
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className={styles.grid}>
                             <div className={styles.right} id='hoverer'>
-                                <Image
-                                    src={'/images/background/3.jpg'}
-                                    alt='photo'
-                                    width={10000}
-                                    height={10000}
-                                    style={imageStyles}
-                                    className={styles.hover}
-                                />
+                                <div className={styles.overflow}>
+                                    <Image
+                                        src={'/images/background/3.jpg'}
+                                        alt='sayyad shirazi'
+                                        width={10000}
+                                        height={10000}
+                                        style={imageStyles}
+                                        className={styles.hover}
+                                    />
+                                </div>
                             </div>
                             <div className={styles.left}>
                                     <h2>
@@ -168,14 +172,16 @@ const Home = () => {
                                 </p>
                             </div>
                             <div className={styles.right} id='hoverer'>
-                                <Image
-                                    src={'/images/fazeabadi.jpg'}
-                                    alt='photo'
-                                    height={10000}
-                                    width={10000}
-                                    style={imageStyles}
-                                    className={styles.hover}
-                                />
+                                <div className={styles.overflow}>
+                                    <Image
+                                        src={'/images/fazeabadi.jpg'}
+                                        alt='photo'
+                                        height={10000}
+                                        width={10000}
+                                        style={imageStyles}
+                                        className={styles.hover}
+                                    />
+                                    </div>
                             </div>
                         </div>
                     </div>

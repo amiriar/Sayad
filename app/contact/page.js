@@ -42,7 +42,7 @@ const page = () => {
     return (
         <>
             <Navbar/> 
-                <div className={styles.container} id='mt'>
+                <div className={styles.container}>
                     <section className={styles.aboutSection}>
                         <div className={styles.text}>
                             <div className={styles.right}>

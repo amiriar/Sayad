@@ -8,15 +8,17 @@ const Navbar = () => {
             <header className={styles.header}>
                 <nav className={styles.navbar}>
                     <div className={styles.logoName}>
-                        <h1 className={styles.name}>
-                            هنرستان شهید صیاد شیرازی 
-                        </h1>
+                        <Link href={'/'} className={styles.link}>
+                            <h1 className={styles.name}>
+                                هنرستان شهید صیاد شیرازی 
+                            </h1>
+                        </Link>
                     </div>
                     <div className={styles.loginIcon}>
                         <Image 
                             src={'/images/icons/sayad-icon_gold.png'}
-                            width={50}
-                            height={50}
+                            width={40}
+                            height={44}
                             draggable={false}
                         />
                     </div>

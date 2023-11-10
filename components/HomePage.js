@@ -106,7 +106,7 @@ const Home = () => {
                                     <Swiper
                                         slidesPerView={1}
                                         navigation={false}
-                                        spaceBetween={0}
+                                        spaceBetween={30}
                                         keyboard={{
                                             enabled: true,
                                         }}

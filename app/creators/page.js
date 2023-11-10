@@ -47,7 +47,7 @@ const Page = () => {
                             <div className={styles.left1}>
                                 <div className={styles.imageTag}>
                                     <Image
-                                    src={'/images/creators/Sup.jpg'}
+                                    src={'/images/creators/amiriar.jpg'}
                                     alt="photo"
                                     width={1000}
                                     height={1000}
@@ -60,7 +60,7 @@ const Page = () => {
                         <div className={styles.left2}>
                             <div className={styles.imageTag}>
                                 <Image
-                                src={'/images/creators/soroush-mashayekhi.jpg'}
+                                src={'/images/creators/Soroush-Mashayekhi.jpg'}
                                 alt="photo"
                                 width={1000}
                                 height={1000}

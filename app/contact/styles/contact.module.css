@@ -1,6 +1,6 @@
 .container{
     background-color: #1c1c1c;
-    height: auto;
+    min-height: 100vh;
     max-width: 1920px;
     justify-self: center;
     display: flex;
@@ -10,12 +10,11 @@
     font-family: 'Yekan', sans-serif;
     text-align: justify;
     text-justify: inter-word;
-
 }
 .aboutSection{
     background-color: #222222;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,18 +42,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.51rem;
-
 }
 
 .homeMap{
     width: 90%;
-    height: 90%;
+    height: 100%;
     border-radius: 0.51rem;
 }
 .contact{
     background-color: #1e1e1e;
     width: 90%;
-    height: 90%;
+    height: 100%;
     border-radius: 0.51rem;
     box-sizing: border-box;
     padding: 1rem;
@@ -95,12 +93,12 @@
         margin-bottom: 1rem;
         height: 150vh;
     }
-    .left{
+    /* .left{
         height: 40vh;
     }
     .right{
         height: 90vh;
-    }
+    } */
     .homeMap{
         height: 40vh;
     }

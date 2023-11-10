@@ -22,7 +22,7 @@
 }
 
 .hover:hover{
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .context h1 {
@@ -215,6 +215,22 @@
     text-decoration: none;
     color: inherit;
 }
+
+.siteImageHover{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.siteSwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.siteImageHover:hover{
+    transform: scale(1.05);
+}
+
 
 @media(max-width: 1410px) {
     .picText2{

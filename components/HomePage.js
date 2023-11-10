@@ -43,6 +43,9 @@ const Home = () => {
         // {cv: false ,picSrc: "/images/Alex-James.jpg", englishName:"" ,persionName:"کامران عربی"},
     ]
     
+    const honarestanPics = ['/images/site/4.jpg','/images/site/2.jpg','/images/site/3.jpg']
+
+
     const TesetemonialCount = clientDisplayWidth < 700 ? 1 : clientDisplayWidth > 1000 ? 3 : 3 
 
     const imageStyles = {
@@ -100,15 +103,39 @@ const Home = () => {
                         <div className={styles.grid}>
                             <div className={styles.right} id='hoverer'>
                                 <div className={styles.overflow}>
-                                    <Image
-                                        src={'/images/background/3.jpg'}
-                                        alt='sayyad shirazi'
-                                        width={10000}
-                                        height={10000}
-                                        style={imageStyles}
-                                        className={styles.hover}
-                                    />
-                                </div>
+                                    <Swiper
+                                        slidesPerView={1}
+                                        navigation={false}
+                                        spaceBetween={0}
+                                        keyboard={{
+                                            enabled: true,
+                                        }}
+                                        autoplay={{
+                                            delay: 5000,
+                                            disableOnInteraction: false,
+                                        }}
+                                        modules={[Autoplay,Navigation,Keyboard]}
+                                        className={styles.siteSwiper}
+                                        loop={false}
+                                    >
+                                    {
+                                        honarestanPics.map((item) => (
+                                            <SwiperSlide className={styles.swiperSlider} key={item}>
+                                                <div>
+                                                    <Image
+                                                        src={item}
+                                                        alt='workerPic'
+                                                        width={10000}
+                                                        height={10000}
+                                                        className={styles.siteImageHover}
+                                                        draggable={false}
+                                                    />
+                                                </div>
+                                            </SwiperSlide>
+                                        ))
+                                    }
+                                </Swiper>
+                            </div>
                             </div>
                             <div className={styles.left}>
                                     <h2 className={styles.h2}>
@@ -120,8 +147,6 @@ const Home = () => {
                                     یک حیاط بزرگ برای اجرای همزمان ورزش فوتبال و والیبال و بسکتبال میباشد.
 
                                     دارای نمازخانه جهت برگزاری نماز جماعت و مراسم و جشن های متفاوت میباشد.
-
-
                                     <br/>
                                 </p>
                                 <p className={styles.picText}>
@@ -155,13 +180,7 @@ const Home = () => {
                             <div className={styles.left}>
                                 <h2 className={styles.h2}>درباره مدیریت این مجموعه..</h2><br/>
                                 <p className={styles.picText}>
-                                    ?لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، 
-                                    و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه 
-                                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
-                                    ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلب
-                                    د، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجا
-                                    د کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان 
-                                    مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                    
                                 </p>
                                 <p className={styles.picText2}>
                                 </p>

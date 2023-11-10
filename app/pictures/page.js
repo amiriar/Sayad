@@ -15,26 +15,30 @@ const page = () => {
     }
 
     const images = [
-        "/images/1.jpg",
-        "/images/2.heic",
-        "/images/3.heic",
-        "/images/4.jpg",
-        "/images/5.jpg",
-        "/images/6.jpg",
-        "/images/7.jpg",
-        "/images/8.jpg",
-        //
-        "/images/4.jpg",
-        "/images/5.jpg",
-        "/images/6.jpg",
-        "/images/7.jpg",
-        "/images/8.jpg",
-        "/images/4.jpg",
-        "/images/5.jpg",
-        "/images/6.jpg",
-        "/images/7.jpg",
-        "/images/8.jpg",
-        //
+        '/images/1.jpg',
+        '/images/2.heic',
+        '/images/3.heic',
+        '/images/4.jpg',
+        '/images/5.jpg',
+        '/images/6.jpg',
+        '/images/7.jpg',
+        '/images/8.jpg',
+        '/images/9.jpg',
+        '/images/10.heic',
+        '/images/11.heic',
+        '/images/12.heic',
+        '/images/13.heic',
+        '/images/14.heic',
+        '/images/15.heic',
+        '/images/16.heic',
+        '/images/17.heic',
+        '/images/18.heic',
+        '/images/19.heic',
+        '/images/20.heic',
+        '/images/21.heic',
+        '/images/22.heic',
+        '/images/23.jpg',
+        '/images/24.heic',
     ]
 
     return (
@@ -46,8 +50,8 @@ const page = () => {
                         className="my-masonry-grid"
                         columnClassName="my-masonry-grid_column"
                     >
-                        {images.map((item ,index) => (
-                            <Image src={item} key={index} alt={index} width={1000} height={1000} className='pictureItem' draggable={false} />
+                        {images.map((item) => (
+                            <Image src={item} key={item} alt={item} width={1000} height={1000} className='pictureItem' draggable={false} />
                         ))}
                     </Masonry>
                 </div>

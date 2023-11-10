@@ -43,16 +43,18 @@ const Home = () => {
         // {cv: false ,picSrc: "/images/Alex-James.jpg", englishName:"" ,persionName:"کامران عربی"},
     ]
     
-    const honarestanPics = ['/images/site/4.jpg','/images/site/2.jpg','/images/site/3.jpg']
+    const honarestanPics = [
+        '/images/site/1.jpg',
+        '/images/site/2.jpg',
+        '/images/site/3.jpg',
+    ]
 
 
     const TesetemonialCount = clientDisplayWidth < 700 ? 1 : clientDisplayWidth > 1000 ? 3 : 3 
 
     const imageStyles = {
-        /*border: '2px solid #333',*/
         width:"100%",
         height:'100%',
-        /*borderRadius:"1rem"*/
     };
 
     return (
@@ -102,7 +104,7 @@ const Home = () => {
                         </div>
                         <div className={styles.grid}>
                             <div className={styles.right} id='hoverer'>
-                                <div className={styles.overflow}>
+                                <div className={styles.overflow2}>
                                     <Swiper
                                         slidesPerView={1}
                                         navigation={false}
@@ -121,7 +123,6 @@ const Home = () => {
                                     {
                                         honarestanPics.map((item) => (
                                             <SwiperSlide className={styles.swiperSlider} key={item}>
-                                                <div>
                                                     <Image
                                                         src={item}
                                                         alt='workerPic'
@@ -130,7 +131,6 @@ const Home = () => {
                                                         className={styles.siteImageHover}
                                                         draggable={false}
                                                     />
-                                                </div>
                                             </SwiperSlide>
                                         ))
                                     }
@@ -180,7 +180,16 @@ const Home = () => {
                             <div className={styles.left}>
                                 <h2 className={styles.h2}>درباره مدیریت این مجموعه..</h2><br/>
                                 <p className={styles.picText}>
-                                    
+                                    ?لورم ایپسوم متن ساختگی با تولید 
+                                    ی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون 
+                                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکن
+                                    لوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و 
+                                    تخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه 
+                                    ی علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این 
+                                    ورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط
+                                    سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
+                                    جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                                 </p>
                                 <p className={styles.picText2}>
                                 </p>

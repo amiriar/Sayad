@@ -220,12 +220,13 @@
     width: 100%;
     height: 100%;
     transition: all 0.3s;
-    
+    aspect-ratio: 16 / 9;
 }
 
 .siteSwiper {
     width: 100%;
     height: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 .siteImageHover:hover{
@@ -237,6 +238,26 @@
     transition: all 0.2s;
     border-radius: 1rem;
     height: 100%;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+@media(max-width: 1920px) {
+    .siteImageHover{
+        aspect-ratio: auto;
+    }
+    .siteSwiper {
+        aspect-ratio: auto;
+    }
 }
 
 @media(max-width: 1410px) {
@@ -250,9 +271,16 @@
         font-size: 0.9rem;
     }
 }
-@media(max-width: 870px) {
+@media(max-width: 868px) {
     .picText{
         font-size: 0.8rem;
+    }
+    .icons{
+        margin-top: 1rem;
+    }
+    .picText2{
+        font-size: 0.8rem;
+        display: flex !important;
     }
 }
 

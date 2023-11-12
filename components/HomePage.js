@@ -44,9 +44,9 @@ const Home = () => {
     ]
     
     const honarestanPics = [
-        '/images/site/1.jpg',
         '/images/site/2.jpg',
         '/images/site/3.jpg',
+        '/images/site/1.jpg',
     ]
 
 
@@ -60,7 +60,7 @@ const Home = () => {
     return (
         <>
             <Navbar/>
-                <main className={styles.pageBody} >
+                <main className={styles.pageBody}>
                     <div className={styles.pic}></div>
                     <div className={styles.context}>
                         <h1 className={styles.schoolname}>
@@ -125,7 +125,7 @@ const Home = () => {
                                             <SwiperSlide className={styles.swiperSlider} key={item}>
                                                     <Image
                                                         src={item}
-                                                        alt='workerPic'
+                                                        alt='sitepics'
                                                         width={10000}
                                                         height={10000}
                                                         className={styles.siteImageHover}
@@ -137,43 +137,34 @@ const Home = () => {
                                 </Swiper>
                             </div>
                             </div>
-                            <div className={styles.left}>
+                            <div className={styles.left} style={{display:'flex', flexDirection:"column" , justifyContent:"space-between"}}>
+                                <div>
                                     <h2 className={styles.h2}>
                                         درباره این هنرستان
                                     </h2>
-                                <p className={styles.picText}>
-                                    هنرستان صیاد شیرازی در سال 1382 در منطقه ی 14 تهران تاسیس شد ، این هنرستان دارای سه سایت کامپیوتر برای رشته کامپیوتر و یک سایت کامپیوتر برای رشته ی حساب داری میباشد.
+                                    <p className={styles.picText}>
+                                        هنرستان صیاد شیرازی در سال 1382 در منطقه ی 14 تهران تاسیس شد ، این هنرستان دارای سه سایت کامپیوتر برای رشته کامپیوتر و یک سایت کامپیوتر برای رشته ی حساب داری میباشد.
 
-                                    یک حیاط بزرگ برای اجرای همزمان ورزش فوتبال و والیبال و بسکتبال میباشد.
+                                        یک حیاط بزرگ برای اجرای همزمان ورزش فوتبال و والیبال و بسکتبال میباشد.
 
-                                    دارای نمازخانه جهت برگزاری نماز جماعت و مراسم و جشن های متفاوت میباشد.
-                                    <br/>
-                                </p>
-                                <p className={styles.picText}>
-                                    این هنرستان به همت مدیریت جدید و کارکنان تلاشگر به یکی از هنرستان های نمونه رشته کامپیوتر در منطقه تبدیل شده است.
-                                </p>
-                                <p className={styles.picText}>
-                                    همچنین این هنرستان میزبان هنرجویان نخبه ای مانند:
-                                    <br/>
-                                    <span className={styles.span}>
-                                    سروش مشایخی
-                                    </span>
-                                    <br/>
-                                    <span className={styles.span}>
-                                    امیررضا عبدالرحیمی
-                                    </span>
-                                    <br/>
-                                    <span className={styles.span}>
-                                    سروش مشایخی
-                                    </span>
-                                    <br/>
-                                    <span className={styles.span}>
-                                    امیررضا عبدالرحیمی
-                                    </span>
-                                    <br/>
-                                    
-                                    
-                                </p>
+                                        دارای نمازخانه جهت برگزاری نماز جماعت و مراسم و جشن های متفاوت میباشد.
+                                        <br/>
+                                    </p>
+                                    <p className={styles.picText}>
+                                        این هنرستان به همت مدیریت جدید و کارکنان تلاشگر به یکی از هنرستان های نمونه رشته کامپیوتر در منطقه تبدیل شده است.
+                                    </p>
+                                </div>
+                                <div className={styles.icons}>
+                                    با ما در ارتباط باشید!
+                                    <Link href={"https://web.bale.ai/@sayad_1401"} className={styles.icon} target='_blank'>
+                                        <Image
+                                            src={'/images/icons/logo-Bale-app-download-png-vector-Toranjlogo (1).png'}
+                                            height={20}
+                                            width={20}
+                                            alt='bale'
+                                        />
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.grid}>
@@ -186,10 +177,6 @@ const Home = () => {
                                     لوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
                                     کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و 
                                     تخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه 
-                                    ی علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این 
-                                    ورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط
-                                    سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
-                                    جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                                 </p>
                                 <p className={styles.picText2}>
                                 </p>

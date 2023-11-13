@@ -54,6 +54,7 @@ const Page = () => {
                                     width={1000}
                                     height={1000}
                                     className={styles.pic}
+                                    draggable={false}
                                     />
                                 </div>
                             </div>
@@ -67,6 +68,7 @@ const Page = () => {
                                 width={1000}
                                 height={1000}
                                 className={styles.pic}
+                                draggable={false}
                                 />
                             </div>
                         </div>

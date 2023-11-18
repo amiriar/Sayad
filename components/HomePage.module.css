@@ -1,6 +1,5 @@
 .pic{
     box-sizing: border-box;
-    /* margin-top: 1rem; */
     min-height: 100vh;
     background-image: url('../public/images/background/sayad_shirazi.jpg');
     background-size: cover;
@@ -25,9 +24,6 @@
     transform: scale(1.05);
 }
 
-.context h1 {
-    font-family: 'Yekan', sans-serif;
-}
 .context{
     position: absolute;
     left: 0; 
@@ -35,7 +31,7 @@
     top: 50%;
     margin-left: auto; 
     margin-right: auto; 
-    width: auto; /* Need a specific value to work */
+    width: auto;
     z-index: 10000;
     display: flex;
     align-items: center;
@@ -43,9 +39,25 @@
     flex-wrap: wrap;
     flex-direction: column;
     color: #fafafa ;
-    font-family: 'Yekan', sans-serif;
-    /* background-color: blue; */
+    margin-top: -1rem;
 }
+
+.schoolname{
+    background-color: #1a1a1a8f;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.schooladdress {
+    background-color: #1a1a1a8f;
+    padding-left: 5.95rem;
+    padding-right: 5.95rem;
+    padding-bottom: 1rem;
+    border-radius: 0 0 0.5rem 0.5rem ;
+}
+
 
 .schoolname::selection {
     background-color: #1a1a1a7f;
@@ -192,19 +204,6 @@
     color: #d4bd9d;
 }
 
-/* 
-#hoverer{
-    overflow: hidden;
-    transition: transform 0.3s;
-    width: 100% !important;
-} */
-
-/* .hover{
-    width: 100% !important;
-    height: auto;
-    display: block;
-    transition: transform 0.3s;
-} */
 
 .tName{
     text-decoration: none;
@@ -258,6 +257,20 @@
     .siteSwiper {
         aspect-ratio: auto;
     }
+    .schoolname{
+        background-color: #1a1a1a8f;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-top: 2rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .schooladdress {
+        background-color: #1a1a1a8f;
+        padding-left: 8.45rem;
+        padding-right: 8.45rem;
+        padding-bottom: 2rem;
+        border-radius: 0 0 0.5rem 0.5rem ;
+    }
 }
 
 @media(max-width: 1410px) {
@@ -278,9 +291,24 @@
     .icons{
         margin-top: 1rem;
     }
-    .picText2{
+    /* .picText2{
         font-size: 0.8rem;
         display: flex !important;
+    } */
+    .schoolname{
+        background-color: #1a1a1a8f;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        padding-top: 1rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    
+    .schooladdress {
+        background-color: #1a1a1a8f;
+        padding-left: 5.95rem;
+        padding-right: 5.95rem;
+        padding-bottom: 1rem;
+        border-radius: 0 0 0.5rem 0.5rem ;
     }
 }
 
@@ -306,7 +334,16 @@
     .workers h2{
         font-size: 1.3rem;
     }
-
+    .schoolname {
+        font-size: 1.5rem;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+    .schooladdress {
+        font-size: 0.7rem;
+        padding-left: 2.8rem;
+        padding-right: 2.7rem;
+    }
     .swiperSlider {
         cursor: default;
     }
@@ -320,12 +357,7 @@
 }
 
 @media(max-width: 400px) {
-    .context h1 {
-        font-size: 1.5rem;
-    }
-    .context h5{
-        font-size: 0.7rem;
-    }
+
     .workers h2{
         font-size: 1.2rem;
     }
@@ -399,5 +431,15 @@
     }
     .right{
         width: 78% !important;
+    }
+    .schoolname {
+        font-size: 1.5rem;
+        padding: 0;
+        background-color: inherit;
+    }
+    .schooladdress {
+        font-size: 0.7rem;
+        padding: 0;
+        background-color: inherit;
     }
 }

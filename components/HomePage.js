@@ -62,12 +62,12 @@ const Home = () => {
             <Navbar/>
                 <main className={styles.pageBody}>
                     <div className={styles.pic}></div>
-                    <div className={styles.context}>
-                        <h1 className={styles.schoolname}>
-                            هنرستان شهید صیاد شیرازی
-                        </h1>
-                        <h5 style={{color:"#fafafa"}} className={styles.schooladdress}>واقع شده در منطقه 14 جنب دانشگاه آزاد تهران جنوب</h5>
-                    </div>
+                        <div className={styles.context}>
+                            <h1 className={styles.schoolname}>
+                                هنرستان شهید صیاد شیرازی
+                            </h1>
+                            <h5 style={{color:"#fafafa"}} className={styles.schooladdress}>واقع شده در منطقه 14 جنب دانشگاه آزاد تهران جنوب</h5>
+                        </div>
                     <div className={styles.mainText}>
                         <div className={styles.grid}>
                             <div className={styles.right}>

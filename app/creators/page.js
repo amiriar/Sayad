@@ -90,7 +90,7 @@ const Page = () => {
                                 <Link href={'https://www.instagram.com/soroush_.msh/'}>
                                 <AiFillInstagram size={25} color="#f5f5f5" />
                                 </Link>
-                                <Link href={'/'}>
+                                <Link href={'https://github.com/Grandiv06'}>
                                 <BsGithub size={23} color="#f5f5f5" />
                                 </Link>
                                 <Link href={'/'}>
